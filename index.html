@@ -1,0 +1,2306 @@
+<!DOCTYPE html><html class="h-full" lang="id" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Lady Juwita Lagwina Sinaga — 19th Birthday Experience</title>
+<!-- Fonts & Tailwind -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600&amp;family=Alex+Brush&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ivory: {
+              50: '#FDFBF7',
+              100: '#FAF6EE',
+              200: '#F4ECE0',
+              300: '#EBDDCA',
+            },
+            blush: {
+              50: '#FDF5F5',
+              100: '#FBECEB',
+              200: '#F6D8D7',
+              300: '#ECC0BE',
+              400: '#DE9F9E',
+              500: '#CD7F81',
+            },
+            dustyrose: '#B87278',
+            champagne: {
+              light: '#F8F1E5',
+              DEFAULT: '#D8B888',
+              gold: '#C5A059',
+              dark: '#9E7835'
+            },
+            charcoal: '#22201F',
+            softbrown: '#5C4E4B'
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            display: ['"Playfair Display"', 'serif'],
+            script: ['"Alex Brush"', 'cursive'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    /* Custom Cursor */
+    @media (pointer: fine) {
+      body {
+        cursor: default;
+      }
+      .custom-cursor-dot {
+        position: fixed;
+        width: 10px;
+        height: 10px;
+        background: radial-gradient(circle, rgba(216,184,136,0.9) 0%, rgba(222,159,158,0.4) 100%);
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 9999;
+        transform: translate(-50%, -50%);
+        transition: transform 0.08s ease-out;
+        mix-blend-mode: multiply;
+      }
+    }
+
+    /* 3D Envelope & Flip Styles */
+    .perspective-1000 {
+      perspective: 1200px;
+    }
+    .preserve-3d {
+      transform-style: preserve-3d;
+    }
+    .backface-hidden {
+      backface-visibility: hidden;
+    }
+    .rotate-y-180 {
+      transform: rotateY(180deg);
+    }
+
+    /* Shimmer & Glows */
+    @keyframes softFloat {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-7px) rotate(0.5deg); }
+    }
+    .animate-float {
+      animation: softFloat 5s ease-in-out infinite;
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.4; transform: scale(1); }
+      50% { opacity: 0.8; transform: scale(1.08); }
+    }
+    .animate-pulse-glow {
+      animation: pulseGlow 4s ease-in-out infinite;
+    }
+
+    @keyframes flameFlicker {
+      0%, 100% { transform: scale(1) rotate(-1deg); opacity: 0.95; }
+      25% { transform: scale(1.06, 0.95) rotate(1.5deg); opacity: 1; }
+      50% { transform: scale(0.94, 1.05) rotate(-2deg); opacity: 0.88; }
+      75% { transform: scale(1.03, 1.02) rotate(1deg); opacity: 0.98; }
+    }
+    .flame-anim {
+      animation: flameFlicker 0.45s infinite alternate ease-in-out;
+      transform-origin: bottom center;
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F4ECE0;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #DE9F9E;
+      border-radius: 999px;
+    }
+
+    /* ===== LOVE PARTICLES ===== */
+    .love-particle {
+      position: fixed;
+      pointer-events: none;
+      z-index: 9998;
+      font-size: 16px;
+      user-select: none;
+      animation: loveFloat 1.4s ease-out forwards;
+      will-change: transform, opacity;
+    }
+    @keyframes loveFloat {
+      0%   { transform: translate(0, 0) scale(0.5) rotate(-15deg); opacity: 1; }
+      40%  { transform: translate(var(--dx), calc(var(--dy) * 0.4)) scale(1.1) rotate(10deg); opacity: 0.9; }
+      100% { transform: translate(calc(var(--dx) * 1.3), var(--dy)) scale(0.4) rotate(25deg); opacity: 0; }
+    }
+
+    /* ===== TYPEWRITER CURSOR ===== */
+    .typewriter-cursor::after {
+      content: '|';
+      animation: blink 0.75s step-end infinite;
+      color: #B87278;
+      margin-left: 1px;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0; }
+    }
+
+    /* ===== LOVE COUPON TICKET ===== */
+    @keyframes couponPop {
+      0%   { transform: scale(0.85) rotate(-2deg); opacity:0; }
+      60%  { transform: scale(1.04) rotate(0.5deg); opacity:1; }
+      100% { transform: scale(1) rotate(0deg); opacity:1; }
+    }
+    .coupon-card {
+      animation: couponPop 0.45s cubic-bezier(.4,1.6,.5,1) both;
+    }
+    .coupon-claimed {
+      filter: grayscale(0.6) brightness(0.85);
+      pointer-events: none;
+    }
+    .coupon-tear {
+      position: relative;
+    }
+    .coupon-tear::before, .coupon-tear::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #FDFBF7;
+    }
+    .coupon-tear::before { left: -7px; }
+    .coupon-tear::after  { right: -7px; }
+
+    /* ===== LOVE JAR ===== */
+    @keyframes jarShake {
+      0%,100% { transform: rotate(0deg); }
+      20%     { transform: rotate(-4deg); }
+      40%     { transform: rotate(4deg); }
+      60%     { transform: rotate(-3deg); }
+      80%     { transform: rotate(3deg); }
+    }
+    .jar-shake { animation: jarShake 0.5s ease; }
+    @keyframes noteUnfold {
+      0%   { transform: scaleY(0.1) translateY(-10px); opacity:0; }
+      100% { transform: scaleY(1) translateY(0);    opacity:1; }
+    }
+    .note-unfold { animation: noteUnfold 0.4s cubic-bezier(.4,1.4,.6,1) both; }
+
+    /* ===== PHOTO SLOW DRIFT ANIMATION (LEFT - RIGHT - BACK) ===== */
+    @keyframes photoSlowPan {
+      0% {
+        transform: scale(1.15) translateX(-5%);
+      }
+      50% {
+        transform: scale(1.15) translateX(5%);
+      }
+      100% {
+        transform: scale(1.15) translateX(-5%);
+      }
+    }
+
+    @keyframes photoSlowPanRev {
+      0% {
+        transform: scale(1.15) translateX(5%);
+      }
+      50% {
+        transform: scale(1.15) translateX(-5%);
+      }
+      100% {
+        transform: scale(1.15) translateX(5%);
+      }
+    }
+
+    /* Target all photos in polaroid cards across the pages */
+    .polaroid-card .overflow-hidden > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      animation: photoSlowPan 7.5s ease-in-out infinite;
+      will-change: transform;
+      transition: filter 0.3s ease;
+    }
+
+    /* Staggered natural movement for varied photos */
+    .polaroid-card:nth-child(even) .overflow-hidden > img {
+      animation: photoSlowPanRev 8.5s ease-in-out infinite;
+      animation-delay: -2s;
+    }
+    .polaroid-card:nth-child(3n) .overflow-hidden > img {
+      animation: photoSlowPan 9.5s ease-in-out infinite;
+      animation-delay: -4s;
+    }
+    .polaroid-card:nth-child(4n) .overflow-hidden > img {
+      animation: photoSlowPanRev 8s ease-in-out infinite;
+      animation-delay: -3s;
+    }
+
+    /* Pause and smooth zoom on hover so user can focus on the picture */
+    .polaroid-card:hover .overflow-hidden > img {
+      animation-play-state: paused;
+      transform: scale(1.18) translateX(0) !important;
+      transition: transform 0.4s ease;
+    }
+
+    /* ===== GENTLE CARD SWAY ANIMATION (SWINGING SLOWLY LEFT & RIGHT) ===== */
+    @keyframes cardGentleSwayA {
+      0% {
+        transform: rotate(-2deg) translateX(-4px);
+      }
+      50% {
+        transform: rotate(1deg) translateX(4px);
+      }
+      100% {
+        transform: rotate(-2deg) translateX(-4px);
+      }
+    }
+
+    @keyframes cardGentleSwayB {
+      0% {
+        transform: rotate(2.5deg) translateX(4px);
+      }
+      50% {
+        transform: rotate(-1deg) translateX(-4px);
+      }
+      100% {
+        transform: rotate(2.5deg) translateX(4px);
+      }
+    }
+
+    .polaroid-card {
+      animation: cardGentleSwayA 6.5s ease-in-out infinite;
+      will-change: transform;
+    }
+
+    .polaroid-card:nth-child(even) {
+      animation: cardGentleSwayB 7.5s ease-in-out infinite;
+      animation-delay: -2.5s;
+    }
+
+    .polaroid-card:nth-child(3n) {
+      animation: cardGentleSwayA 8.5s ease-in-out infinite;
+      animation-delay: -4s;
+    }
+
+    .polaroid-card:nth-child(4n) {
+      animation: cardGentleSwayB 7s ease-in-out infinite;
+      animation-delay: -1.5s;
+    }
+
+    /* Hover on card stops sway and brings it forward */
+    .polaroid-card:hover {
+      animation-play-state: paused;
+      transform: scale(1.06) rotate(0deg) !important;
+      z-index: 40 !important;
+    }
+
+    /* Also apply slow drifting pan to mini photos in Scene 8, Scene 9, and Scene 2 */
+    #scene8 .overflow-hidden > img,
+    #scene9 .overflow-hidden > img,
+    #scene2 .overflow-hidden > img {
+      animation: photoSlowPan 7.5s ease-in-out infinite;
+      will-change: transform;
+    }
+    #scene8 .overflow-hidden > img:hover,
+    #scene9 .overflow-hidden > img:hover,
+    #scene2 .overflow-hidden > img:hover {
+      animation-play-state: paused;
+    }
+  </style>
+</head>
+<body class="h-full bg-ivory-50 text-charcoal font-sans antialiased overflow-hidden select-none">
+<!-- Interactive Canvas Particles (Petals, Sparkles, Dust) -->
+<canvas class="fixed inset-0 pointer-events-none z-10 w-full h-full" id="ambientCanvas" width="1280" height="1024"></canvas>
+<!-- Custom Cursor Element -->
+<div class="custom-cursor-dot hidden md:block" id="cursorDot" style="left: 662px; top: 1012px;"></div>
+<!-- Audio Controls & Ambient Background Audio Synthesizer -->
+<div class="fixed bottom-6 right-6 z-50 flex items-center space-x-3 bg-white/70 backdrop-blur-md px-4 py-2.5 rounded-full border border-champagne/40 shadow-sm transition hover:shadow-md">
+<button class="flex items-center space-x-2 text-xs font-medium tracking-wider uppercase text-softbrown hover:text-dustyrose transition focus:outline-none" id="musicToggleBtn" title="Putar Musik Latar">
+<span class="w-4 h-4 rounded-full border border-champagne-gold flex items-center justify-center text-[9px] transition-transform" id="musicDiscIcon">♫</span>
+<span id="musicStatusText" class="">Play Melody</span>
+</button>
+</div>
+<!-- Persistent Scene Navigation Indicator -->
+<div class="fixed top-6 left-6 z-50 flex items-center space-x-2 bg-white/60 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-champagne/30 text-xs text-softbrown font-serif tracking-widest shadow-xs">
+<span class="text-champagne-gold font-sans font-semibold">19</span>
+<span class="text-champagne/60">/</span>
+<span class="italic" id="sceneStepName">Scene 01</span>
+</div>
+<!-- Scene 01 to 09 Containers inside Master Frame -->
+<main class="relative w-full h-full overflow-hidden" id="sceneContainer">
+<!-- ==================== SCENE 01: THE ENVELOPE ==================== -->
+<section class="absolute inset-0 flex flex-col items-center justify-center p-6 transition-all duration-1000 opacity-100 z-30" id="scene1">
+<div class="max-w-md w-full flex flex-col items-center text-center">
+<!-- Floating Title Badge -->
+<div class="mb-4 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-champagne-light/70 border border-champagne/30 text-[11px] font-sans tracking-widest uppercase text-champagne-dark">
+<span class="">A Special Delivery</span>
+<span class="w-1 h-1 rounded-full bg-champagne-gold"></span>
+<span class="">19th Edition</span>
+</div>
+<h2 class="font-serif italic text-2xl text-softbrown/80 mb-6 font-light">An invitation for Lady...</h2>
+<!-- Interactive Envelope with 3D Tilt -->
+<div class="perspective-1000 w-72 sm:w-80 h-48 sm:h-52 cursor-pointer transition-transform duration-300 ease-out animate-float relative my-2" id="envelopeWrapper">
+<!-- Envelope Body -->
+<div class="w-full h-full relative rounded-xl shadow-2xl bg-[#F6EEE1] border border-[#E8DAC5] preserve-3d overflow-hidden flex items-center justify-center" id="envelopeElement" style="transform: rotateX(0deg) rotateY(0deg) scale(1);">
+<!-- Envelope Liner Texture & Fold Shadows -->
+<div class="absolute inset-0 bg-gradient-to-tr from-[#EAD9C2]/50 via-transparent to-[#FBF8F2] pointer-events-none"></div>
+<!-- Envelope Flap Top -->
+<div class="absolute top-0 left-0 right-0 h-28 bg-[#F0E4D0] border-b border-[#DFCBB0] shadow-sm transform origin-top transition-transform duration-700 ease-in-out" id="envelopeFlap" style="clip-path: polygon(0 0, 100% 0, 50% 100%);"></div>
+<!-- Envelope Letter Peek Inside -->
+<div class="absolute bottom-4 w-11/12 h-36 bg-ivory-50 rounded-lg border border-[#E9DFD0] shadow-md transition-all duration-700 flex flex-col items-center justify-start p-4 text-center transform translate-y-6" id="envelopeLetterPeek">
+<span class="font-script text-xl text-dustyrose">Lady Juwita</span>
+<span class="text-[9px] uppercase tracking-widest text-softbrown/60 mt-1">19th Anniversary</span>
+</div>
+<!-- Bottom & Side Flaps Overlay -->
+<div class="absolute bottom-0 left-0 right-0 h-32 bg-[#F7EFE4] border-t border-[#E8DCBF]/50" style="clip-path: polygon(0 100%, 100% 100%, 50% 30%);"></div>
+<!-- Red/Burgundy Wax Seal with Monogram "L" -->
+<div class="absolute z-20 w-14 h-14 rounded-full bg-gradient-to-br from-[#A63A48] via-[#852733] to-[#5C161F] shadow-lg flex items-center justify-center border border-[#BF4E5D] transition-transform duration-500 hover:scale-110 active:scale-95" id="waxSeal">
+<div class="w-10 h-10 rounded-full border border-[#D96B7A]/40 flex items-center justify-center shadow-inner">
+<span class="font-serif italic text-ivory-100 font-bold text-xl drop-shadow">L</span>
+</div>
+<div class="absolute -inset-1 rounded-full bg-[#A63A48]/20 blur animate-pulse"></div>
+</div>
+</div>
+</div>
+<!-- Envelope Caption & Action -->
+<p class="font-serif italic text-softbrown text-base sm:text-lg mt-8 mb-4">
+          "You have a little something waiting for you..."
+        </p>
+<button class="group relative px-8 py-3 rounded-full bg-gradient-to-r from-dustyrose to-blush-400 text-white font-sans text-xs tracking-widest uppercase shadow-md hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-300" id="openEnvelopeBtn">
+<span class="relative z-10 flex items-center gap-2">
+<span class="">Open the Letter</span>
+<span class="transition-transform group-hover:translate-x-1">→</span>
+</span>
+<div class="absolute inset-0 rounded-full bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</button>
+</div>
+</section>
+<!-- ==================== SCENE 02: THE LETTER ==================== -->
+<section class="absolute inset-0 flex flex-col items-center justify-center p-6 transition-all duration-1000 opacity-0 pointer-events-none z-20" id="scene2">
+<div class="max-w-xl w-full bg-ivory-50 rounded-2xl p-8 sm:p-12 shadow-2xl border border-champagne/40 relative overflow-hidden transition-all duration-700 transform translate-y-8" id="letterPaper">
+<!-- Attached Polaroid clip on letter -->
+<div class="absolute -top-1 -right-1 sm:top-2 sm:right-3 transform rotate-6 z-20 pointer-events-none group">
+<div class="relative bg-white p-1.5 pb-3 rounded shadow-md border border-[#E8DAC5] w-20 sm:w-24">
+<div class="w-4 h-2 bg-[#DEC5A7]/70 rounded-xs absolute -top-1 left-1/2 transform -translate-x-1/2 rotate-3 shadow-xs"></div>
+<div class="w-full aspect-square overflow-hidden rounded">
+<img alt="Lady" class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0TFBDxjIIZbTOf8OoR9kVtpvb0KURo7XMbqWWapC5R6HV_fOFtFWICIgUn_TFl64DFi87v-0ceoeJ0P9N0VTuQ5Ox6v8rdPDNykwVLxo5U33tX-pyx1OQcJfZlx_VvEAc3Ym8awiJyBRsY2JEc-UmIwllS9PwuB4ujMwO_1fG8fnWsTTejxFQJXvBHa32AA769GUoa5dF1LJcnzOFelsvlWeDerLxyASEE9Fsaf0Qgcd3ZW9ffIbmkKESNLDZlRUzVw">
+</div>
+<p class="font-script text-[10px] text-center text-softbrown mt-1">Lady 🤍</p>
+</div>
+</div>
+<!-- Corner vintage flourishes -->
+<div class="absolute top-4 left-4 w-8 h-8 border-t-2 border-l-2 border-champagne/50"></div>
+<div class="absolute top-4 right-4 w-8 h-8 border-t-2 border-r-2 border-champagne/50"></div>
+<div class="absolute bottom-4 left-4 w-8 h-8 border-b-2 border-l-2 border-champagne/50"></div>
+<div class="absolute bottom-4 right-4 w-8 h-8 border-b-2 border-r-2 border-champagne/50"></div>
+<div class="text-center space-y-6">
+<p class="font-script text-3xl sm:text-4xl text-dustyrose" id="letterSalutation">Dear Lady,</p>
+<div class="space-y-4 font-serif text-lg sm:text-xl text-softbrown leading-relaxed min-h-[120px] flex flex-col justify-center">
+<p class="transition-opacity duration-1000 opacity-0 italic" id="letterLine1"></p>
+<p class="transition-opacity duration-1000 opacity-0 font-light" id="letterLine2"></p>
+<div class="transition-opacity duration-1000 opacity-0 pt-2" id="letterLine3">
+<span class="text-xs uppercase tracking-widest text-champagne-dark font-sans block mb-1">Happy 19th Birthday</span>
+<h1 class="font-display text-2xl sm:text-3xl text-charcoal font-semibold">Lady Juwita Lagwina Sinaga</h1>
+</div>
+</div>
+<div class="pt-6 transition-opacity duration-700 opacity-0" id="letterAction">
+<button class="px-8 py-3 rounded-full bg-softbrown text-ivory-50 text-xs uppercase tracking-widest hover:bg-dustyrose transition-all shadow hover:shadow-lg hover:scale-105 active:scale-95" id="letterContinueBtn">
+              Enter Birthday World →
+            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== SCENE 03: ENTER THE BIRTHDAY WORLD ==================== -->
+<section class="absolute inset-0 flex flex-col items-center justify-center p-6 transition-all duration-1000 opacity-0 pointer-events-none z-20 overflow-hidden" id="scene3">
+<!-- Background Elements -->
+<div class="absolute inset-0 pointer-events-none transition-transform duration-300 ease-out" id="worldParallaxBg">
+<div class="absolute top-1/4 left-1/4 w-96 h-96 bg-blush-200/40 rounded-full blur-3xl animate-pulse-glow"></div>
+<div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-champagne-light/60 rounded-full blur-3xl animate-pulse-glow" style="animation-delay: -2s;"></div>
+</div>
+<div class="relative z-10 text-center max-w-2xl w-full flex flex-col items-center">
+<span class="text-xs sm:text-sm font-sans tracking-[0.25em] uppercase text-dustyrose mb-2 font-medium">Welcome to</span>
+<h2 class="font-display text-3xl sm:text-5xl text-charcoal font-normal tracking-wide mb-3">Lady's 19th World</h2>
+<p class="font-serif italic text-lg sm:text-xl text-softbrown/80 mb-6">A little world made just for you.</p>
+<!-- Huge Elegant 19 Graphic with Easter Egg counter -->
+<div class="relative my-4 group cursor-pointer" id="giant19Badge" title="Klik angka ini...">
+<div class="text-[100px] sm:text-[140px] font-display font-bold leading-none text-transparent bg-clip-text bg-gradient-to-b from-champagne-gold via-dustyrose to-blush-300 select-none drop-shadow-sm transition-transform duration-500 hover:scale-105">
+            19
+          </div>
+<div class="absolute -inset-4 bg-champagne/10 rounded-full blur-xl -z-10 group-hover:bg-champagne/20 transition-all"></div>
+<span class="text-[10px] uppercase font-sans tracking-widest text-champagne-dark opacity-60 block mt-1">✨ A touch of magic ✨</span>
+</div>
+<p class="text-xs font-sans text-softbrown/70 max-w-md mt-4 mb-8">
+          Nineteen milestones, countless smiles, and a chapter waiting to unfold. Let’s take a walk through what makes you shine.
+        </p>
+<button class="px-8 py-3.5 rounded-full bg-gradient-to-r from-dustyrose to-champagne-gold text-white text-xs uppercase tracking-widest shadow-md hover:shadow-xl hover:scale-105 active:scale-95 transition-all" id="worldContinueBtn">
+          Explore 19 Little Things →
+        </button>
+</div>
+</section>
+<!-- ==================== SCENE 04: THE 19 CARDS ==================== -->
+<section class="absolute inset-0 flex flex-col items-center justify-between py-6 px-4 sm:px-8 transition-all duration-1000 opacity-0 pointer-events-none z-20 overflow-y-auto" id="scene4">
+<!-- Header -->
+<div class="text-center pt-2 pb-4">
+<span class="text-[11px] font-sans uppercase tracking-[0.2em] text-dustyrose font-medium">Chapter Four</span>
+<h2 class="font-display text-2xl sm:text-3xl text-charcoal">19 Little Things That Make You Special</h2>
+<p class="font-serif italic text-sm sm:text-base text-softbrown mt-1">"Let's count a few... Click to reveal each memory."</p>
+<!-- Progress Counter -->
+<div class="mt-2 inline-flex items-center gap-2 px-3 py-1 bg-white/80 rounded-full border border-champagne/30 text-xs font-sans text-softbrown shadow-xs">
+<span class="">Unlocked:</span>
+<span class="font-bold text-dustyrose" id="cardsOpenedCount">0</span>
+<span class="">/ 19</span>
+</div>
+</div>
+<!-- 19 Interactive Flip Cards Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-3 sm:gap-4 max-w-5xl w-full my-auto py-2" id="cardsGrid"></div>
+<!-- Footer & Unlock Banner -->
+<div class="text-center py-4 w-full max-w-md">
+<div class="hidden transition-all duration-500 mb-3" id="cardsUnlockMessage">
+<p class="font-serif italic text-softbrown text-base">"19 things... and somehow, that's still not enough."</p>
+</div>
+<button class="opacity-50 cursor-not-allowed px-8 py-3 rounded-full bg-softbrown text-white text-xs uppercase tracking-widest transition-all duration-300 shadow" disabled="" id="cardsContinueBtn">
+          Unlock at least 5 cards to continue
+        </button>
+</div>
+</section>
+<!-- ==================== SCENE 05: MEMORY GALLERY (SCRAPBOOK POLAROID) ==================== -->
+<section class="absolute inset-0 flex flex-col items-center justify-between p-4 sm:p-8 transition-all duration-1000 opacity-0 pointer-events-none z-20 overflow-y-auto" id="scene5">
+<div class="text-center pt-2 max-w-xl">
+<span class="text-[11px] font-sans uppercase tracking-[0.2em] text-dustyrose">Chapter Five</span>
+<h2 class="font-display text-2xl sm:text-3xl text-charcoal">Moments Deserved to be Remembered</h2>
+<p class="font-serif italic text-sm sm:text-base text-softbrown mt-1">A cinematic scrapbook of laughter, goofy adventures, and radiant warmth.</p>
+<!-- Section Filter / Sub-header stickers -->
+<div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mt-3">
+<span class="px-3 py-1 rounded-full bg-blush-100/90 text-dustyrose text-[10px] uppercase font-sans tracking-wider border border-blush-300/40 shadow-xs">
+            🌸 Lady's Radiant Smiles
+          </span>
+<span class="px-3 py-1 rounded-full bg-champagne-light/90 text-champagne-dark text-[10px] uppercase font-sans tracking-wider border border-champagne/40 shadow-xs">
+            🛵 Silly Couple Adventures
+          </span>
+<span class="px-3 py-1 rounded-full bg-white/90 text-softbrown text-[10px] uppercase font-sans tracking-wider border border-champagne/30 shadow-xs">📸 17 Memories</span>
+<span class="px-3 py-1 rounded-full bg-gradient-to-r from-dustyrose/20 to-champagne-gold/20 text-charcoal text-[10px] uppercase font-sans tracking-wider border border-champagne-gold/40 shadow-xs flex items-center gap-1">✨ New Moments Added</span></div>
+</div>
+<!-- Polaroid Scrapbook Floating Layout containing all photos -->
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 sm:gap-6 max-w-6xl w-full my-auto py-6 px-2" id="scrapbookContainer"><div class="polaroid-card group bg-white p-3 pb-5 rounded-xl shadow-md hover:shadow-2xl border border-[#EDE4D5] transform -rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer relative" onclick="document.getElementById('modalActiveImg').src='https://lh3.googleusercontent.com/aida-public/AB6AXuBgaXWS7YOc4jB40zzlYDcL8Bdbe4ndvhlzd78BkuYmjxZ4y1JVKJZLtdMiL4pK6ejf0OG_DZcIEYW4L2Jx2yi8cyl9x5BExHATJBG8kb4xkv9T8LSGAVePfdIxliuDx85CLO2HT1Wi-aXkDWCnYsZe_VuBOfn9zHcJ_3ZM8SlPlZ4hgDGTtcnQlycS3L0My-OT04fZsemeYvdfbohUsfPapkgzl1AvsPmlmuR8ema2NhmUXn-xi_Q-Aq3CXJO4PRgaRQ'; document.getElementById('photoModalTitle').innerText='Goofy faces &amp; silly moments 😜'; document.getElementById('photoModalDesc').innerText='Grainy smiles, funny faces, and pure warmth together.'; document.getElementById('photoModalTag').innerText='Couple Silly'; const m=document.getElementById('photoModal'); m.classList.remove('hidden'); setTimeout(()=&gt;m.classList.remove('opacity-0'),20);"><div class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-14 h-4 bg-blush-200/80 border-dustyrose/30 border-x rounded-xs shadow-xs z-10"></div><div class="absolute top-2 right-2 z-10"><span class="text-[8px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-champagne-gold/90 text-white backdrop-blur-xs font-sans">Couple 🤍</span></div><div class="w-full aspect-[4/3] rounded overflow-hidden relative shadow-inner bg-blush-50"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjdTpKUC85GPdzoGH_XpGUxoCGWnogLn0u9Oc6ts3nvXhDlO6sTQAhXn3pz5oiYLe_xatFRD31doxv4XcIuZuZpAH4qvuysQoCeU81fzsHQ6ydTx_RW0q82Q6HVioGyN2Ww6IuTMtyl5CBa9p2F3n94iHntwUYYr2gDU_3BiTxr045Ga4PLZkSU9VE8WnuMHLvY1SMCabu2INtqwFZ4sPUlVAQHdQcUNBD0GL2pPmlcwfdfIsUx8HqcDSM7LVihFRtRQ" alt="Goofy faces &amp; silly moments" class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500"><span class="absolute bottom-1.5 left-1.5 bg-black/60 backdrop-blur-sm text-[8px] font-sans px-1.5 py-0.5 rounded text-white tracking-widest uppercase">Silly Moments</span></div><div class="mt-3 text-center px-1"><p class="font-script text-lg sm:text-xl text-charcoal leading-snug line-clamp-1">"Goofy faces &amp; silly moments 😜"</p><span class="text-[9px] font-sans text-softbrown/70 uppercase tracking-widest block mt-0.5">Moment #15</span></div></div><div class="polaroid-card group bg-white p-3 pb-5 rounded-xl shadow-md hover:shadow-2xl border border-[#EDE4D5] transform rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer relative" onclick="document.getElementById('modalActiveImg').src='https://lh3.googleusercontent.com/aida-public/AB6AXuDFcWQTjbk_gpgXenevGUql1v8n0RJAp2J3TTr3b5rN4Cxkn2n6k80xT006GseG4fc2vVVXyhIJ-H_v4Iji8k53yHzGf8hhiYMI0d6NdnqOJLcIf-zbhTaSoJUtm1TgKjlvlWgi8NCBpUrmhsI2lg0vfCnkgEbyOhyuK-PWvP3gCot7fZagu0RLSxWAp6sT7BxAc6NF_fs9MvBVwijU-hW0BCiihe0PtXJIxF20kd2E0nKQSurDsn0Ta-1L9nZL4IZOHg'; document.getElementById('photoModalTitle').innerText='That iconic cute pout 🌸'; document.getElementById('photoModalDesc').innerText='Impeccable style, classy glasses, and the cutest expression.'; document.getElementById('photoModalTag').innerText='Lady Chic'; const m=document.getElementById('photoModal'); m.classList.remove('hidden'); setTimeout(()=&gt;m.classList.remove('opacity-0'),20);"><div class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-14 h-4 bg-champagne-light/90 border-champagne/40 border-x rounded-xs shadow-xs z-10"></div><div class="absolute top-2 right-2 z-10"><span class="text-[8px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-blush-400/90 text-white backdrop-blur-xs font-sans">Lady ✨</span></div><div class="w-full aspect-[4/3] rounded overflow-hidden relative shadow-inner bg-blush-50"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMvSi1jFosIi1pWTIHH3qos-fS8sYA2ojfXex3V-X25RoO6_SepPYdxA-C65ldN971ApxXb08i_elfrqYgkWOUTgRZ7fkLFK2Fl0Z-dGku0lzVt1-IQJmvTRF2bB2oZsoX4YnWnCFL1EG49rlPlrSopt0S45C3eucSnUebPF3n1RSyl1arfU_7nCbNiDtE0h-9HiO7uTFXr6JNujlAWg2JrdlUCS-4sHndvupxVKGDGApaK_KOP4u3L6g_rDMglQcSDQ" alt="That iconic cute pout" class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500"><span class="absolute bottom-1.5 left-1.5 bg-black/60 backdrop-blur-sm text-[8px] font-sans px-1.5 py-0.5 rounded text-white tracking-widest uppercase">Cute Pout</span></div><div class="mt-3 text-center px-1"><p class="font-script text-lg sm:text-xl text-charcoal leading-snug line-clamp-1">"That iconic cute pout 🌸"</p><span class="text-[9px] font-sans text-softbrown/70 uppercase tracking-widest block mt-0.5">Moment #16</span></div></div><div class="polaroid-card group bg-white p-3 pb-5 rounded-xl shadow-md hover:shadow-2xl border border-[#EDE4D5] transform -rotate-1 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer relative" onclick="document.getElementById('modalActiveImg').src='https://lh3.googleusercontent.com/aida-public/AB6AXuDCyY_craaBhmn2XaZtRZBryCyouKsdbo_uQtIa4XJ40Ha_-7ndJRbE6hBVT0fa9RFEHKPGOfxUAdtC_7HLjojdGbuF19bk6jwBPzUkPug09KOKihd2eEtT0Exa2lnxQGgJXqWtI0y9qvIbiEVnsGeY1GjQsz_BWWaIJsbkAxIjSNq_XNP5qcX1Mrnsq3SDpNd1LOzlSWAXsIVMQeupq_FvEeZ0mAs69vf1TYPJBMk8N9uIkt_Uncp9eG1uXcEB3uXj1A'; document.getElementById('photoModalTitle').innerText='Watching the dancing fountains together ⛲'; document.getElementById('photoModalDesc').innerText='Peaceful afternoon breeze and water fountains reaching for the clouds.'; document.getElementById('photoModalTag').innerText='Adventures'; const m=document.getElementById('photoModal'); m.classList.remove('hidden'); setTimeout(()=&gt;m.classList.remove('opacity-0'),20);"><div class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-14 h-4 bg-[#F0E4D0]/80 border-champagne/40 border-x rounded-xs shadow-xs z-10"></div><div class="absolute top-2 right-2 z-10"><span class="text-[8px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-champagne-gold/90 text-white backdrop-blur-xs font-sans">Memories ✨</span></div><div class="w-full aspect-[4/3] rounded overflow-hidden relative shadow-inner bg-blush-50"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDsLJ5-ErPtAxXrm-Ghw5fAEGd1ub7y8DVEtAH_dqqzJuZ30h-Qksu2xYmgkH-buuuY7Z6IY1df3B7I54SrB4kfIfUjyjJ6KGrb9TkKIsPs0ZlPJjOe_NMrbeTeiInqQy39JnPQffpMQZHj2PcvOHkBs3x6Xjou7n6Ti27St6E2fTGHbkCAXRKua-WWCOCNUCFzWZrd8Uw2OgYibzxDJHwpRNLKZCfI_7LE5tQmj3XWpk2RSJko0gKJD_7OMh2WWtUdw" alt="Watching the dancing fountains" class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500"><span class="absolute bottom-1.5 left-1.5 bg-black/60 backdrop-blur-sm text-[8px] font-sans px-1.5 py-0.5 rounded text-white tracking-widest uppercase">Fountain Glow</span></div><div class="mt-3 text-center px-1"><p class="font-script text-lg sm:text-xl text-charcoal leading-snug line-clamp-1">"Watching the dancing fountains together ⛲"</p><span class="text-[9px] font-sans text-softbrown/70 uppercase tracking-widest block mt-0.5">Moment #17</span></div></div>
+<!-- Injected via JS or rendered below -->
+<div class="polaroid-card group bg-white p-3 pb-5 rounded-xl shadow-md hover:shadow-2xl border border-[#EDE4D5] transform rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer relative" onclick="openPhotoModal(0)">
+        <!-- Washi Tape sticker on top -->
+        <div class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-14 h-4 bg-blush-200/80 border-dustyrose/30 border-x rounded-xs shadow-xs z-10"></div>
+        
+        <!-- Category Stamp Badge -->
+        <div class="absolute top-2 right-2 z-10">
+          <span class="text-[8px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-champagne-gold/90 text-white backdrop-blur-xs font-sans">
+            Couple 🤍
+          </span>
+        </div>
+
+        <div class="w-full aspect-[4/3] rounded overflow-hidden relative shadow-inner bg-blush-50">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8n5ZebEw5zhMeScBPjMDre9_VJhxwD7m1B14FDlJZxLdihRiIuUJXYUz-s6xnc1dwpo3dYtrJNOCKZgq9S4IuXSgX1Vz-VKuSHZ5Wwt9qwca2rABSrSVONMnnZFjhw4gjyUxeNT0f98xOa7eL3mFp3bxxN2bXQjj5AuYqGGdmHpYfjaGX-SANWTmeI9bNtT3chRTKWJ96p6OQoWWLXyll9mw6vPDUWV7aNh91PNotgDaj0u7NdXODsOouACSRWzumAA" alt="Too cute to handle 🤪🌸" class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500">
+          <span class="absolute bottom-1.5 left-1.5 bg-black/60 backdrop-blur-sm text-[8px] font-sans px-1.5 py-0.5 rounded text-white tracking-widest uppercase">
+            Goofy Moment
+          </span>
+        </div>
+        <div class="mt-3 text-center px-1">
+          <p class="font-script text-lg sm:text-xl text-charcoal leading-snug line-clamp-1">"Too cute to handle 🤪🌸"</p>
+          <span class="text-[9px] font-sans text-softbrown/70 uppercase tracking-widest block mt-0.5">Moment #1</span>
+        </div>
+      </div><div class="polaroid-card group bg-white p-3 pb-5 rounded-xl shadow-md hover:shadow-2xl border border-[#EDE4D5] transform -rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer relative" onclick="openPhotoModal(1)">
+        <!-- Washi Tape sticker on top -->
+        <div class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-14 h-4 bg-[#F0E4D0]/80 border-champagne/40 border-x rounded-xs shadow-xs z-10"></div>
+        
+        <!-- Category Stamp Badge -->
+        <div class="absolute top-2 right-2 z-10">
+          <span class="text-[8px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-champagne-gold/90 text-white backdrop-blur-xs font-sans">
+            Couple 🤍
+          </span>
+        </div>
+
+        <div class="w-full aspect-[4/3] rounded overflow-hidden relative shadow-inner bg-blush-50">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaku1zQE_ebf7msajY6IuO2mtnJR92YsuaLUIdOWgBEZpsqWgjXYQt5AAuCUBXQ6Vc5RPLBsia_vxqAqt-FXQHatmY5BNfWLLI66LwInW04Yevi4X1qy4CyYPINdDSKHWcckP-POg3hssf5wBNWBhBVN_i4NgwHQQnb426QyN0gQNZrp3YuoX3XW2ay_LgrGWEw-37s3PHW8WIqLpqE-g2gp0x04vrs8IoYNC-NO28iRKqFvZtFfK3X9n0HxClGVAqAQ" alt="Late night rides &amp; cool helmets 🛵🌙" class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500">
+          <span class="absolute bottom-1.5 left-1.5 bg-black/60 backdrop-blur-sm text-[8px] font-sans px-1.5 py-0.5 rounded text-white tracking-widest uppercase">
+            Night Adventure
+          </span>
+        </div>
+        <div class="mt-3 text-center px-1">
+          <p class="font-script text-lg sm:text-xl text-charcoal leading-snug line-clamp-1">"Late night rides &amp; cool helmets 🛵🌙"</p>
+          <span class="text-[9px] font-sans text-softbrown/70 uppercase tracking-widest block mt-0.5">Moment #2</span>
+        </div>
+      </div><div class="polaroid-card group bg-white p-3 pb-5 rounded-xl shadow-md hover:shadow-2xl border border-[#EDE4D5] transform rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer relative" onclick="openPhotoModal(2)">
+        <!-- Washi Tape sticker on top -->
+        <div class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-14 h-4 bg-champagne-light/90 border-champagne/40 border-x rounded-xs shadow-xs z-10"></div>
+        
+        <!-- Category Stamp Badge -->
+        <div class="absolute top-2 right-2 z-10">
+          <span class="text-[8px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-champagne-gold/90 text-white backdrop-blur-xs font-sans">
+            Couple 🤍
+          </span>
+        </div>
+
+        <div class="w-full aspect-[4/3] rounded overflow-hidden relative shadow-inner bg-blush-50">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcGUO3JXh5lG6KxXKoL9xdwDtIuHE4FzSBS7S9lpfIWKdP_KrXKNW-_REl_CUKYjhUNEjxgteH3GQ57QkC75Zv_pxXYQlDaaHnSGGLFjx70uIGaVyH1q6Y6Zu48H_XcyuEu6j04M-r8QU5W4_yh-fr6vVpaPk8xR9IwOoZcTFOlpo8MIESFA358QQWVMoZKTYopXosocY6uZ___F841upI1h_OBgzNy38jbbcuYfQlgCJFyqqytyjNZa234p_NZgArew" alt="My favorite partner in crime 🤍" class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500">
+          <span class="absolute bottom-1.5 left-1.5 bg-black/60 backdrop-blur-sm text-[8px] font-sans px-1.5 py-0.5 rounded text-white tracking-widest uppercase">
+            Sweet Us
+          </span>
+        </div>
+        <div class="mt-3 text-center px-1">
+          <p class="font-script text-lg sm:text-xl text-charcoal leading-snug line-clamp-1">"My favorite partner in crime 🤍"</p>
+          <span class="text-[9px] font-sans text-softbrown/70 uppercase tracking-widest block mt-0.5">Moment #3</span>
+        </div>
+      </div><div class="polaroid-card group bg-white p-3 pb-5 rounded-xl shadow-md hover:shadow-2xl border border-[#EDE4D5] transform -rotate-1 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer relative" onclick="openPhotoModal(3)">
+        <!-- Washi Tape sticker on top -->
+        <div class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-14 h-4 bg-blush-300/70 border-dustyrose/30 border-x rounded-xs shadow-xs z-10"></div>
+        
+        <!-- Category Stamp Badge -->
+        <div class="absolute top-2 right-2 z-10">
+          <span class="text-[8px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-champagne-gold/90 text-white backdrop-blur-xs font-sans">
+            Couple 🤍
+          </span>
+        </div>
+
+        <div class="w-full aspect-[4/3] rounded overflow-hidden relative shadow-inner bg-blush-50">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1ito0LWRrwO7oVJlMpTRJf1rzWpbza17NAiePORclaAWvhocD0cknsgSZ7xKRNUiDsW4cMG8m7sJHjCXXgu9pFAuKwitGEJ_rJWOp38nEenQ6rweK9Bnp__DJ-N4H5o8pj7_iLl-hT_FW9JvcxEpiWVdqxWjx8i3DbIo90xXnVRx4kfbzP-NzmX2tno28zBxkNuxKkBPm2QAnaOQHSL6zocfexx5Ajj0rN9Mkr8FF7Arf9aYmmcdRyGC_mujCGi_Jmw" alt="Pure silliness together 😝" class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500">
+          <span class="absolute bottom-1.5 left-1.5 bg-black/60 backdrop-blur-sm text-[8px] font-sans px-1.5 py-0.5 rounded text-white tracking-widest uppercase">
+            Playful Vibes
+          </span>
+        </div>
+        <div class="mt-3 text-center px-1">
+          <p class="font-script text-lg sm:text-xl text-charcoal leading-snug line-clamp-1">"Pure silliness together 😝"</p>
+          <span class="text-[9px] font-sans text-softbrown/70 uppercase tracking-widest block mt-0.5">Moment #4</span>
+        </div>
+      </div><div class="polaroid-card group bg-white p-3 pb-5 rounded-xl shadow-md hover:shadow-2xl border border-[#EDE4D5] transform rotate-1 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer relative" onclick="openPhotoModal(4)">
+        <!-- Washi Tape sticker on top -->
+        <div class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-14 h-4 bg-[#EAD9C2]/80 border-champagne/40 border-x rounded-xs shadow-xs z-10"></div>
+        
+        <!-- Category Stamp Badge -->
+        <div class="absolute top-2 right-2 z-10">
+          <span class="text-[8px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-blush-400/90 text-white backdrop-blur-xs font-sans">
+            Lady ✨
+          </span>
+        </div>
+
+        <div class="w-full aspect-[4/3] rounded overflow-hidden relative shadow-inner bg-blush-50">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeE8DwhylBPCrUxiRijc3W7lkHYGi5hwKZS4uRRb245RpzH5KahT6tYpqiO2wKeWH0Wm1rsuF5OYuv-JlnLIB9av7IaWXCWzqQr4N464gMcMA8QZVCSbIJnvkSHTheo07wJJ-aFKLWYo0Q4AFFEvyphf9NhfRumnbQ--6J0megdAzox0dlsY4aneXK9UbvZxwiASV_eaHpSEklu1rGwr-A8qHFlmVNJJw1NxdUwPakQ7_6bumTMbs-VPlSzN2qb0A-AA" alt="Nature walks &amp; cap vibes 🧢🍃" class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500">
+          <span class="absolute bottom-1.5 left-1.5 bg-black/60 backdrop-blur-sm text-[8px] font-sans px-1.5 py-0.5 rounded text-white tracking-widest uppercase">
+            Outdoor Walk
+          </span>
+        </div>
+        <div class="mt-3 text-center px-1">
+          <p class="font-script text-lg sm:text-xl text-charcoal leading-snug line-clamp-1">"Nature walks &amp; cap vibes 🧢🍃"</p>
+          <span class="text-[9px] font-sans text-softbrown/70 uppercase tracking-widest block mt-0.5">Moment #5</span>
+        </div>
+      </div><div class="polaroid-card group bg-white p-3 pb-5 rounded-xl shadow-md hover:shadow-2xl border border-[#EDE4D5] transform -rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer relative" onclick="openPhotoModal(5)">
+        <!-- Washi Tape sticker on top -->
+        <div class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-14 h-4 bg-blush-200/70 border-dustyrose/20 border-x rounded-xs shadow-xs z-10"></div>
+        
+        <!-- Category Stamp Badge -->
+        <div class="absolute top-2 right-2 z-10">
+          <span class="text-[8px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-blush-400/90 text-white backdrop-blur-xs font-sans">
+            Lady ✨
+          </span>
+        </div>
+
+        <div class="w-full aspect-[4/3] rounded overflow-hidden relative shadow-inner bg-blush-50">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCynn1X-nYZD9UpMTeRdCm222xq2Pic_us5vzH1txBbzXuZLi7BD9udrATAJAZrDFRJ7-3iBjiFS9_1RVyQhKfD82c1cqi1g_Pj3r4uJ2Y32gvXAgkRLoFwwzBtuPJw_sINmHF1UjxE9ZpzqPdeaXCJ_O4zQEMbUnoXPttkVE-8TAPsBxtHa6agXOmxnvSGAjZGRO8BeheIKL-gJF4ErgXwkPaWaZ8f5mdrIwXil-cDKUCsdgJsA9n_euzh6-8Ebzf6aQ" alt="That precious smile that brightens any room ✨" class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500">
+          <span class="absolute bottom-1.5 left-1.5 bg-black/60 backdrop-blur-sm text-[8px] font-sans px-1.5 py-0.5 rounded text-white tracking-widest uppercase">
+            Sweet Smile
+          </span>
+        </div>
+        <div class="mt-3 text-center px-1">
+          <p class="font-script text-lg sm:text-xl text-charcoal leading-snug line-clamp-1">"That precious smile that brightens any room ✨"</p>
+          <span class="text-[9px] font-sans text-softbrown/70 uppercase tracking-widest block mt-0.5">Moment #6</span>
+        </div>
+      </div><div class="polaroid-card group bg-white p-3 pb-5 rounded-xl shadow-md hover:shadow-2xl border border-[#EDE4D5] transform rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer relative" onclick="openPhotoModal(6)">
+        <!-- Washi Tape sticker on top -->
+        <div class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-14 h-4 bg-champagne-light/90 border-champagne/40 border-x rounded-xs shadow-xs z-10"></div>
+        
+        <!-- Category Stamp Badge -->
+        <div class="absolute top-2 right-2 z-10">
+          <span class="text-[8px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-blush-400/90 text-white backdrop-blur-xs font-sans">
+            Lady ✨
+          </span>
+        </div>
+
+        <div class="w-full aspect-[4/3] rounded overflow-hidden relative shadow-inner bg-blush-50">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCguH2Wh-Na8Uoq7lP-vWVxcBKLu2sxLUqu1_P594BpqaQQXIPynCPcRB849ycavQcfXo49aCXwDCGHjMON7vvqUV6b6k92ITboL7oqdBSprA850oOoAlpdy0-xkCHKKx_AxDA2CCVHstCXtjyCdUY5jAurEE5sbRq8cUJkCyDrARhxe6h4nU5xfhWr0vK0UUK2NaS9QD85IHahFuZXBndR79MhiDGWoQ9a54u5KurboGB8pHMPjrLIeaWvGbQsMM6VtQ" alt="So pretty in batik 🌸" class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500">
+          <span class="absolute bottom-1.5 left-1.5 bg-black/60 backdrop-blur-sm text-[8px] font-sans px-1.5 py-0.5 rounded text-white tracking-widest uppercase">
+            Elegance
+          </span>
+        </div>
+        <div class="mt-3 text-center px-1">
+          <p class="font-script text-lg sm:text-xl text-charcoal leading-snug line-clamp-1">"So pretty in batik 🌸"</p>
+          <span class="text-[9px] font-sans text-softbrown/70 uppercase tracking-widest block mt-0.5">Moment #7</span>
+        </div>
+      </div><div class="polaroid-card group bg-white p-3 pb-5 rounded-xl shadow-md hover:shadow-2xl border border-[#EDE4D5] transform -rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer relative" onclick="openPhotoModal(7)">
+        <!-- Washi Tape sticker on top -->
+        <div class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-14 h-4 bg-[#F0E4D0]/80 border-champagne/40 border-x rounded-xs shadow-xs z-10"></div>
+        
+        <!-- Category Stamp Badge -->
+        <div class="absolute top-2 right-2 z-10">
+          <span class="text-[8px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-blush-400/90 text-white backdrop-blur-xs font-sans">
+            Lady ✨
+          </span>
+        </div>
+
+        <div class="w-full aspect-[4/3] rounded overflow-hidden relative shadow-inner bg-blush-50">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQCwUqmrGSO8vRJenXjjUs0I-f9BAEv0BfMWD14VaV4K8I3IGq_zNRiSa3tEdUabBgEYHEyDYj9KGLJOzXveowiS9fpYNnBtx_ysJE8i1Crzr5m_emJS_qtP1s0aPaH1h0Fiy3ApapmYK92ZU8TY9xPLdI5KC28N_n40yjvPs0UJoGcVr4QOySxMWmDil8INfic4fBMl-Cyxbp1kdPnw7wpN9nJqnNGmciNem9tIhLE9QzmFRfvA_OBFB6t0vGHSqsfA" alt="Sunshine &amp; Ocean Breeze 🌊" class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500">
+          <span class="absolute bottom-1.5 left-1.5 bg-black/60 backdrop-blur-sm text-[8px] font-sans px-1.5 py-0.5 rounded text-white tracking-widest uppercase">
+            Wanderlust
+          </span>
+        </div>
+        <div class="mt-3 text-center px-1">
+          <p class="font-script text-lg sm:text-xl text-charcoal leading-snug line-clamp-1">"Sunshine &amp; Ocean Breeze 🌊"</p>
+          <span class="text-[9px] font-sans text-softbrown/70 uppercase tracking-widest block mt-0.5">Moment #8</span>
+        </div>
+      </div><div class="polaroid-card group bg-white p-3 pb-5 rounded-xl shadow-md hover:shadow-2xl border border-[#EDE4D5] transform rotate-1 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer relative" onclick="openPhotoModal(8)">
+        <!-- Washi Tape sticker on top -->
+        <div class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-14 h-4 bg-blush-200/60 border-dustyrose/30 border-x rounded-xs shadow-xs z-10"></div>
+        
+        <!-- Category Stamp Badge -->
+        <div class="absolute top-2 right-2 z-10">
+          <span class="text-[8px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-blush-400/90 text-white backdrop-blur-xs font-sans">
+            Lady ✨
+          </span>
+        </div>
+
+        <div class="w-full aspect-[4/3] rounded overflow-hidden relative shadow-inner bg-blush-50">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTSwXxSWdgzUOYqavN_VEh6Rn9PaJ9m12E11SMWo-mr_fXxKkR5tieELifEFkCdeekwiQzYHh2Wf3LaIafzQfjrtYR8U3insSCfr6iAfqxXdncc0-p159RjozlOZ4vftgr_vGWu47lQfYo3H4TYtzxczdgvrnCZu8NbxOACXVWGS5XW4OnEbenS_BUWzX9PgiVlXfjd4cwHZk5DJLRtnVUeop66L08uNyLUPHKhB0NNWBa0tznOoQMjsSE5QLifGxcQQ" alt="Golden Hour Glow ✨" class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500">
+          <span class="absolute bottom-1.5 left-1.5 bg-black/60 backdrop-blur-sm text-[8px] font-sans px-1.5 py-0.5 rounded text-white tracking-widest uppercase">
+            Film Nostalgia
+          </span>
+        </div>
+        <div class="mt-3 text-center px-1">
+          <p class="font-script text-lg sm:text-xl text-charcoal leading-snug line-clamp-1">"Golden Hour Glow ✨"</p>
+          <span class="text-[9px] font-sans text-softbrown/70 uppercase tracking-widest block mt-0.5">Moment #9</span>
+        </div>
+      </div><div class="polaroid-card group bg-white p-3 pb-5 rounded-xl shadow-md hover:shadow-2xl border border-[#EDE4D5] transform -rotate-1 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer relative" onclick="openPhotoModal(9)">
+        <!-- Washi Tape sticker on top -->
+        <div class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-14 h-4 bg-champagne-light/90 border-champagne/40 border-x rounded-xs shadow-xs z-10"></div>
+        
+        <!-- Category Stamp Badge -->
+        <div class="absolute top-2 right-2 z-10">
+          <span class="text-[8px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-blush-400/90 text-white backdrop-blur-xs font-sans">
+            Lady ✨
+          </span>
+        </div>
+
+        <div class="w-full aspect-[4/3] rounded overflow-hidden relative shadow-inner bg-blush-50">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBn3pLlV2m963GQBG7B1K3TRY5pqSwUFuJZYx0VnG1nLneLilJKbxUADH-beObV5MfmACTtxP7kDf2r5zPUdv5yO1vwNvxkxK0Bc50xyBlgY5jtuOkGHawy1tU_xUY7nFYgOxYcK1JXfNDhia4c7T7hEpz9zr1tIX2XS-dn7x8TsRUdhcYrtZU3P0Ohfc-UHT6mjASbUWj5LPQKAnE3y8x0HvwiB--xccP9xoFhuuJ9sL9P1D_Y4Fb_1pG84iij3C88nw" alt="The sweetest everyday smile 🥤" class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500">
+          <span class="absolute bottom-1.5 left-1.5 bg-black/60 backdrop-blur-sm text-[8px] font-sans px-1.5 py-0.5 rounded text-white tracking-widest uppercase">
+            Everyday Joy
+          </span>
+        </div>
+        <div class="mt-3 text-center px-1">
+          <p class="font-script text-lg sm:text-xl text-charcoal leading-snug line-clamp-1">"The sweetest everyday smile 🥤"</p>
+          <span class="text-[9px] font-sans text-softbrown/70 uppercase tracking-widest block mt-0.5">Moment #10</span>
+        </div>
+      </div><div class="polaroid-card group bg-white p-3 pb-5 rounded-xl shadow-md hover:shadow-2xl border border-[#EDE4D5] transform rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer relative" onclick="openPhotoModal(10)">
+        <!-- Washi Tape sticker on top -->
+        <div class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-14 h-4 bg-[#F0E4D0]/80 border-champagne/40 border-x rounded-xs shadow-xs z-10"></div>
+        
+        <!-- Category Stamp Badge -->
+        <div class="absolute top-2 right-2 z-10">
+          <span class="text-[8px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-blush-400/90 text-white backdrop-blur-xs font-sans">
+            Lady ✨
+          </span>
+        </div>
+
+        <div class="w-full aspect-[4/3] rounded overflow-hidden relative shadow-inner bg-blush-50">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbjIjnltav-WD_4f7BGGdhsK6FqtuJdQh0svURDXIPJDx7WcySRXAIXxtVrs11bQaKH1JiIIFBsXYIoh8c6LX44TzL-rEzlgpQZOgrsP_vC6lhujRWlp4G2FtC1hHIiSnBvTCyA5OFVu9YYyVSXIHQzYkTo-gtk87J-eVO_6peZU1ATOYb9lFNKrQ-98065yRQA6cXmZe_g5Duo6euKKzUaX4MGGGWg2j9EhwkVlMMswxrlLW_hZ8LFCyTfCdgbKnnvw" alt="Snack time joy 🍯" class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500">
+          <span class="absolute bottom-1.5 left-1.5 bg-black/60 backdrop-blur-sm text-[8px] font-sans px-1.5 py-0.5 rounded text-white tracking-widest uppercase">
+            Sweet Bites
+          </span>
+        </div>
+        <div class="mt-3 text-center px-1">
+          <p class="font-script text-lg sm:text-xl text-charcoal leading-snug line-clamp-1">"Snack time joy 🍯"</p>
+          <span class="text-[9px] font-sans text-softbrown/70 uppercase tracking-widest block mt-0.5">Moment #11</span>
+        </div>
+      </div><div class="polaroid-card group bg-white p-3 pb-5 rounded-xl shadow-md hover:shadow-2xl border border-[#EDE4D5] transform -rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer relative" onclick="openPhotoModal(11)">
+        <!-- Washi Tape sticker on top -->
+        <div class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-14 h-4 bg-blush-200/60 border-dustyrose/30 border-x rounded-xs shadow-xs z-10"></div>
+        
+        <!-- Category Stamp Badge -->
+        <div class="absolute top-2 right-2 z-10">
+          <span class="text-[8px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-blush-400/90 text-white backdrop-blur-xs font-sans">
+            Lady ✨
+          </span>
+        </div>
+
+        <div class="w-full aspect-[4/3] rounded overflow-hidden relative shadow-inner bg-blush-50">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzrEN09K8dX9YYuigXbyRsB3_OsrpowmBLITocHvWv0H1lJxGlNV8Ow4VXctq37Vgiv2BF5P3xnj1rm2FjUv0TqKseV9OcMbyMHLde_64rwJgEXSq4nVIMjHMTgzRgvDvZL7x9iCI9xeB4lNOvNNI2Jb-6HitJqxpCUodFNoO4Ru2BSF-COx8qTXz-w-aOnJFJa4NvJt4Gl96PttSkTZHwm39r-w0quZJ4TRdUOZGHTuhdVoJqor8TXV49GbbQQAVYsQ" alt="Pure cute energy 🌸" class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500">
+          <span class="absolute bottom-1.5 left-1.5 bg-black/60 backdrop-blur-sm text-[8px] font-sans px-1.5 py-0.5 rounded text-white tracking-widest uppercase">
+            Playful Mood
+          </span>
+        </div>
+        <div class="mt-3 text-center px-1">
+          <p class="font-script text-lg sm:text-xl text-charcoal leading-snug line-clamp-1">"Pure cute energy 🌸"</p>
+          <span class="text-[9px] font-sans text-softbrown/70 uppercase tracking-widest block mt-0.5">Moment #12</span>
+        </div>
+      </div><div class="polaroid-card group bg-white p-3 pb-5 rounded-xl shadow-md hover:shadow-2xl border border-[#EDE4D5] transform rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer relative" onclick="openPhotoModal(12)">
+        <!-- Washi Tape sticker on top -->
+        <div class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-14 h-4 bg-champagne-light/90 border-champagne/40 border-x rounded-xs shadow-xs z-10"></div>
+        
+        <!-- Category Stamp Badge -->
+        <div class="absolute top-2 right-2 z-10">
+          <span class="text-[8px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-blush-400/90 text-white backdrop-blur-xs font-sans">
+            Lady ✨
+          </span>
+        </div>
+
+        <div class="w-full aspect-[4/3] rounded overflow-hidden relative shadow-inner bg-blush-50">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQLkp9Hu9RD2BozO2RdkieY4yJUP5qLyBDszzw0swxaSp-JFsV1UW9Y_gkSR8_Uu1n9oGoT63CuE0PVIuBzIXQnSfz1yID68ehoGRaGWwkap76WSBFzz3qduNwVx3GelG9qYbOKZe3XWgVn-ou0R-oCfLtObfOJurnvRP_hG2g69tFLch9VrIPzluYO-_Gn6RQwAK90Pviyi9cwzJgtfsaxMlgC8Z7DD8a6wRsRkLH-50hq-_Mzz9F9RTlQx5e_LeGbQ" alt="Movie dates &amp; laughter 🍿" class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500">
+          <span class="absolute bottom-1.5 left-1.5 bg-black/60 backdrop-blur-sm text-[8px] font-sans px-1.5 py-0.5 rounded text-white tracking-widest uppercase">
+            Cinema Night
+          </span>
+        </div>
+        <div class="mt-3 text-center px-1">
+          <p class="font-script text-lg sm:text-xl text-charcoal leading-snug line-clamp-1">"Movie dates &amp; laughter 🍿"</p>
+          <span class="text-[9px] font-sans text-softbrown/70 uppercase tracking-widest block mt-0.5">Moment #13</span>
+        </div>
+      </div><div class="polaroid-card group bg-white p-3 pb-5 rounded-xl shadow-md hover:shadow-2xl border border-[#EDE4D5] transform -rotate-1 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer relative" onclick="openPhotoModal(13)">
+        <!-- Washi Tape sticker on top -->
+        <div class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-14 h-4 bg-[#F0E4D0]/80 border-champagne/40 border-x rounded-xs shadow-xs z-10"></div>
+        
+        <!-- Category Stamp Badge -->
+        <div class="absolute top-2 right-2 z-10">
+          <span class="text-[8px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-blush-400/90 text-white backdrop-blur-xs font-sans">
+            Lady ✨
+          </span>
+        </div>
+
+        <div class="w-full aspect-[4/3] rounded overflow-hidden relative shadow-inner bg-blush-50">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZgDujc8n7iQkz_KjSXXmdjyT1qeTUBFhq3QOa6jzdEH78b5USWGQ1vjnQXogQVobtlL4p725YaDwgjmjhUBpCEwA2OFNXudGIntXee5xvlyver8lYBoL6CYvroFz66SCWwSSi5ufM0UQ7MZ9niWxZJQFp6CDQf-DSUTe1vFYXlGtulu6oVM2FHtBINJWUSILa3YsAMVWrx9kIBg0eNdgMhSFFiz8utKwrlrvQ45S57KFuUykfuosjCgOomce__NawsQ" alt="Cozy moments &amp; endless warmth 🎀" class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500">
+          <span class="absolute bottom-1.5 left-1.5 bg-black/60 backdrop-blur-sm text-[8px] font-sans px-1.5 py-0.5 rounded text-white tracking-widest uppercase">
+            Cozy Comfort
+          </span>
+        </div>
+        <div class="mt-3 text-center px-1">
+          <p class="font-script text-lg sm:text-xl text-charcoal leading-snug line-clamp-1">"Cozy moments &amp; endless warmth 🎀"</p>
+          <span class="text-[9px] font-sans text-softbrown/70 uppercase tracking-widest block mt-0.5">Moment #14</span>
+        </div>
+      </div><div class="polaroid-card group bg-white p-3 pb-5 rounded-xl shadow-md hover:shadow-2xl border border-[#EDE4D5] transform rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer relative" onclick="openPhotoModal(0)">
+        <!-- Washi Tape sticker on top -->
+        <div class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-14 h-4 bg-blush-200/80 border-dustyrose/30 border-x rounded-xs shadow-xs z-10"></div>
+        
+        <!-- Category Stamp Badge -->
+        <div class="absolute top-2 right-2 z-10">
+          <span class="text-[8px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-champagne-gold/90 text-white backdrop-blur-xs font-sans">
+            Couple 🤍
+          </span>
+        </div>
+
+        <div class="w-full aspect-[4/3] rounded overflow-hidden relative shadow-inner bg-blush-50">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8n5ZebEw5zhMeScBPjMDre9_VJhxwD7m1B14FDlJZxLdihRiIuUJXYUz-s6xnc1dwpo3dYtrJNOCKZgq9S4IuXSgX1Vz-VKuSHZ5Wwt9qwca2rABSrSVONMnnZFjhw4gjyUxeNT0f98xOa7eL3mFp3bxxN2bXQjj5AuYqGGdmHpYfjaGX-SANWTmeI9bNtT3chRTKWJ96p6OQoWWLXyll9mw6vPDUWV7aNh91PNotgDaj0u7NdXODsOouACSRWzumAA" alt="Too cute to handle 🤪🌸" class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500">
+          <span class="absolute bottom-1.5 left-1.5 bg-black/60 backdrop-blur-sm text-[8px] font-sans px-1.5 py-0.5 rounded text-white tracking-widest uppercase">
+            Goofy Moment
+          </span>
+        </div>
+        <div class="mt-3 text-center px-1">
+          <p class="font-script text-lg sm:text-xl text-charcoal leading-snug line-clamp-1">"Too cute to handle 🤪🌸"</p>
+          <span class="text-[9px] font-sans text-softbrown/70 uppercase tracking-widest block mt-0.5">Moment #1</span>
+        </div>
+      </div><div class="polaroid-card group bg-white p-3 pb-5 rounded-xl shadow-md hover:shadow-2xl border border-[#EDE4D5] transform -rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer relative" onclick="openPhotoModal(1)">
+        <!-- Washi Tape sticker on top -->
+        <div class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-14 h-4 bg-[#F0E4D0]/80 border-champagne/40 border-x rounded-xs shadow-xs z-10"></div>
+        
+        <!-- Category Stamp Badge -->
+        <div class="absolute top-2 right-2 z-10">
+          <span class="text-[8px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-champagne-gold/90 text-white backdrop-blur-xs font-sans">
+            Couple 🤍
+          </span>
+        </div>
+
+        <div class="w-full aspect-[4/3] rounded overflow-hidden relative shadow-inner bg-blush-50">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaku1zQE_ebf7msajY6IuO2mtnJR92YsuaLUIdOWgBEZpsqWgjXYQt5AAuCUBXQ6Vc5RPLBsia_vxqAqt-FXQHatmY5BNfWLLI66LwInW04Yevi4X1qy4CyYPINdDSKHWcckP-POg3hssf5wBNWBhBVN_i4NgwHQQnb426QyN0gQNZrp3YuoX3XW2ay_LgrGWEw-37s3PHW8WIqLpqE-g2gp0x04vrs8IoYNC-NO28iRKqFvZtFfK3X9n0HxClGVAqAQ" alt="Late night rides &amp; cool helmets 🛵🌙" class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500">
+          <span class="absolute bottom-1.5 left-1.5 bg-black/60 backdrop-blur-sm text-[8px] font-sans px-1.5 py-0.5 rounded text-white tracking-widest uppercase">
+            Night Adventure
+          </span>
+        </div>
+        <div class="mt-3 text-center px-1">
+          <p class="font-script text-lg sm:text-xl text-charcoal leading-snug line-clamp-1">"Late night rides &amp; cool helmets 🛵🌙"</p>
+          <span class="text-[9px] font-sans text-softbrown/70 uppercase tracking-widest block mt-0.5">Moment #2</span>
+        </div>
+      </div><div class="polaroid-card group bg-white p-3 pb-5 rounded-xl shadow-md hover:shadow-2xl border border-[#EDE4D5] transform rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer relative" onclick="openPhotoModal(2)">
+        <!-- Washi Tape sticker on top -->
+        <div class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-14 h-4 bg-champagne-light/90 border-champagne/40 border-x rounded-xs shadow-xs z-10"></div>
+        
+        <!-- Category Stamp Badge -->
+        <div class="absolute top-2 right-2 z-10">
+          <span class="text-[8px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-champagne-gold/90 text-white backdrop-blur-xs font-sans">
+            Couple 🤍
+          </span>
+        </div>
+
+        <div class="w-full aspect-[4/3] rounded overflow-hidden relative shadow-inner bg-blush-50">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcGUO3JXh5lG6KxXKoL9xdwDtIuHE4FzSBS7S9lpfIWKdP_KrXKNW-_REl_CUKYjhUNEjxgteH3GQ57QkC75Zv_pxXYQlDaaHnSGGLFjx70uIGaVyH1q6Y6Zu48H_XcyuEu6j04M-r8QU5W4_yh-fr6vVpaPk8xR9IwOoZcTFOlpo8MIESFA358QQWVMoZKTYopXosocY6uZ___F841upI1h_OBgzNy38jbbcuYfQlgCJFyqqytyjNZa234p_NZgArew" alt="My favorite partner in crime 🤍" class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500">
+          <span class="absolute bottom-1.5 left-1.5 bg-black/60 backdrop-blur-sm text-[8px] font-sans px-1.5 py-0.5 rounded text-white tracking-widest uppercase">
+            Sweet Us
+          </span>
+        </div>
+        <div class="mt-3 text-center px-1">
+          <p class="font-script text-lg sm:text-xl text-charcoal leading-snug line-clamp-1">"My favorite partner in crime 🤍"</p>
+          <span class="text-[9px] font-sans text-softbrown/70 uppercase tracking-widest block mt-0.5">Moment #3</span>
+        </div>
+      </div><div class="polaroid-card group bg-white p-3 pb-5 rounded-xl shadow-md hover:shadow-2xl border border-[#EDE4D5] transform -rotate-1 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer relative" onclick="openPhotoModal(3)">
+        <!-- Washi Tape sticker on top -->
+        <div class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-14 h-4 bg-blush-300/70 border-dustyrose/30 border-x rounded-xs shadow-xs z-10"></div>
+        
+        <!-- Category Stamp Badge -->
+        <div class="absolute top-2 right-2 z-10">
+          <span class="text-[8px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-champagne-gold/90 text-white backdrop-blur-xs font-sans">
+            Couple 🤍
+          </span>
+        </div>
+
+        <div class="w-full aspect-[4/3] rounded overflow-hidden relative shadow-inner bg-blush-50">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1ito0LWRrwO7oVJlMpTRJf1rzWpbza17NAiePORclaAWvhocD0cknsgSZ7xKRNUiDsW4cMG8m7sJHjCXXgu9pFAuKwitGEJ_rJWOp38nEenQ6rweK9Bnp__DJ-N4H5o8pj7_iLl-hT_FW9JvcxEpiWVdqxWjx8i3DbIo90xXnVRx4kfbzP-NzmX2tno28zBxkNuxKkBPm2QAnaOQHSL6zocfexx5Ajj0rN9Mkr8FF7Arf9aYmmcdRyGC_mujCGi_Jmw" alt="Pure silliness together 😝" class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500">
+          <span class="absolute bottom-1.5 left-1.5 bg-black/60 backdrop-blur-sm text-[8px] font-sans px-1.5 py-0.5 rounded text-white tracking-widest uppercase">
+            Playful Vibes
+          </span>
+        </div>
+        <div class="mt-3 text-center px-1">
+          <p class="font-script text-lg sm:text-xl text-charcoal leading-snug line-clamp-1">"Pure silliness together 😝"</p>
+          <span class="text-[9px] font-sans text-softbrown/70 uppercase tracking-widest block mt-0.5">Moment #4</span>
+        </div>
+      </div><div class="polaroid-card group bg-white p-3 pb-5 rounded-xl shadow-md hover:shadow-2xl border border-[#EDE4D5] transform rotate-1 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer relative" onclick="openPhotoModal(4)">
+        <!-- Washi Tape sticker on top -->
+        <div class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-14 h-4 bg-[#EAD9C2]/80 border-champagne/40 border-x rounded-xs shadow-xs z-10"></div>
+        
+        <!-- Category Stamp Badge -->
+        <div class="absolute top-2 right-2 z-10">
+          <span class="text-[8px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-blush-400/90 text-white backdrop-blur-xs font-sans">
+            Lady ✨
+          </span>
+        </div>
+
+        <div class="w-full aspect-[4/3] rounded overflow-hidden relative shadow-inner bg-blush-50">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeE8DwhylBPCrUxiRijc3W7lkHYGi5hwKZS4uRRb245RpzH5KahT6tYpqiO2wKeWH0Wm1rsuF5OYuv-JlnLIB9av7IaWXCWzqQr4N464gMcMA8QZVCSbIJnvkSHTheo07wJJ-aFKLWYo0Q4AFFEvyphf9NhfRumnbQ--6J0megdAzox0dlsY4aneXK9UbvZxwiASV_eaHpSEklu1rGwr-A8qHFlmVNJJw1NxdUwPakQ7_6bumTMbs-VPlSzN2qb0A-AA" alt="Nature walks &amp; cap vibes 🧢🍃" class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500">
+          <span class="absolute bottom-1.5 left-1.5 bg-black/60 backdrop-blur-sm text-[8px] font-sans px-1.5 py-0.5 rounded text-white tracking-widest uppercase">
+            Outdoor Walk
+          </span>
+        </div>
+        <div class="mt-3 text-center px-1">
+          <p class="font-script text-lg sm:text-xl text-charcoal leading-snug line-clamp-1">"Nature walks &amp; cap vibes 🧢🍃"</p>
+          <span class="text-[9px] font-sans text-softbrown/70 uppercase tracking-widest block mt-0.5">Moment #5</span>
+        </div>
+      </div><div class="polaroid-card group bg-white p-3 pb-5 rounded-xl shadow-md hover:shadow-2xl border border-[#EDE4D5] transform -rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer relative" onclick="openPhotoModal(5)">
+        <!-- Washi Tape sticker on top -->
+        <div class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-14 h-4 bg-blush-200/70 border-dustyrose/20 border-x rounded-xs shadow-xs z-10"></div>
+        
+        <!-- Category Stamp Badge -->
+        <div class="absolute top-2 right-2 z-10">
+          <span class="text-[8px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-blush-400/90 text-white backdrop-blur-xs font-sans">
+            Lady ✨
+          </span>
+        </div>
+
+        <div class="w-full aspect-[4/3] rounded overflow-hidden relative shadow-inner bg-blush-50">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCynn1X-nYZD9UpMTeRdCm222xq2Pic_us5vzH1txBbzXuZLi7BD9udrATAJAZrDFRJ7-3iBjiFS9_1RVyQhKfD82c1cqi1g_Pj3r4uJ2Y32gvXAgkRLoFwwzBtuPJw_sINmHF1UjxE9ZpzqPdeaXCJ_O4zQEMbUnoXPttkVE-8TAPsBxtHa6agXOmxnvSGAjZGRO8BeheIKL-gJF4ErgXwkPaWaZ8f5mdrIwXil-cDKUCsdgJsA9n_euzh6-8Ebzf6aQ" alt="That precious smile that brightens any room ✨" class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500">
+          <span class="absolute bottom-1.5 left-1.5 bg-black/60 backdrop-blur-sm text-[8px] font-sans px-1.5 py-0.5 rounded text-white tracking-widest uppercase">
+            Sweet Smile
+          </span>
+        </div>
+        <div class="mt-3 text-center px-1">
+          <p class="font-script text-lg sm:text-xl text-charcoal leading-snug line-clamp-1">"That precious smile that brightens any room ✨"</p>
+          <span class="text-[9px] font-sans text-softbrown/70 uppercase tracking-widest block mt-0.5">Moment #6</span>
+        </div>
+      </div><div class="polaroid-card group bg-white p-3 pb-5 rounded-xl shadow-md hover:shadow-2xl border border-[#EDE4D5] transform rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer relative" onclick="openPhotoModal(6)">
+        <!-- Washi Tape sticker on top -->
+        <div class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-14 h-4 bg-champagne-light/90 border-champagne/40 border-x rounded-xs shadow-xs z-10"></div>
+        
+        <!-- Category Stamp Badge -->
+        <div class="absolute top-2 right-2 z-10">
+          <span class="text-[8px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-blush-400/90 text-white backdrop-blur-xs font-sans">
+            Lady ✨
+          </span>
+        </div>
+
+        <div class="w-full aspect-[4/3] rounded overflow-hidden relative shadow-inner bg-blush-50">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCguH2Wh-Na8Uoq7lP-vWVxcBKLu2sxLUqu1_P594BpqaQQXIPynCPcRB849ycavQcfXo49aCXwDCGHjMON7vvqUV6b6k92ITboL7oqdBSprA850oOoAlpdy0-xkCHKKx_AxDA2CCVHstCXtjyCdUY5jAurEE5sbRq8cUJkCyDrARhxe6h4nU5xfhWr0vK0UUK2NaS9QD85IHahFuZXBndR79MhiDGWoQ9a54u5KurboGB8pHMPjrLIeaWvGbQsMM6VtQ" alt="So pretty in batik 🌸" class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500">
+          <span class="absolute bottom-1.5 left-1.5 bg-black/60 backdrop-blur-sm text-[8px] font-sans px-1.5 py-0.5 rounded text-white tracking-widest uppercase">
+            Elegance
+          </span>
+        </div>
+        <div class="mt-3 text-center px-1">
+          <p class="font-script text-lg sm:text-xl text-charcoal leading-snug line-clamp-1">"So pretty in batik 🌸"</p>
+          <span class="text-[9px] font-sans text-softbrown/70 uppercase tracking-widest block mt-0.5">Moment #7</span>
+        </div>
+      </div><div class="polaroid-card group bg-white p-3 pb-5 rounded-xl shadow-md hover:shadow-2xl border border-[#EDE4D5] transform -rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer relative" onclick="openPhotoModal(7)">
+        <!-- Washi Tape sticker on top -->
+        <div class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-14 h-4 bg-[#F0E4D0]/80 border-champagne/40 border-x rounded-xs shadow-xs z-10"></div>
+        
+        <!-- Category Stamp Badge -->
+        <div class="absolute top-2 right-2 z-10">
+          <span class="text-[8px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-blush-400/90 text-white backdrop-blur-xs font-sans">
+            Lady ✨
+          </span>
+        </div>
+
+        <div class="w-full aspect-[4/3] rounded overflow-hidden relative shadow-inner bg-blush-50">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQCwUqmrGSO8vRJenXjjUs0I-f9BAEv0BfMWD14VaV4K8I3IGq_zNRiSa3tEdUabBgEYHEyDYj9KGLJOzXveowiS9fpYNnBtx_ysJE8i1Crzr5m_emJS_qtP1s0aPaH1h0Fiy3ApapmYK92ZU8TY9xPLdI5KC28N_n40yjvPs0UJoGcVr4QOySxMWmDil8INfic4fBMl-Cyxbp1kdPnw7wpN9nJqnNGmciNem9tIhLE9QzmFRfvA_OBFB6t0vGHSqsfA" alt="Sunshine &amp; Ocean Breeze 🌊" class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500">
+          <span class="absolute bottom-1.5 left-1.5 bg-black/60 backdrop-blur-sm text-[8px] font-sans px-1.5 py-0.5 rounded text-white tracking-widest uppercase">
+            Wanderlust
+          </span>
+        </div>
+        <div class="mt-3 text-center px-1">
+          <p class="font-script text-lg sm:text-xl text-charcoal leading-snug line-clamp-1">"Sunshine &amp; Ocean Breeze 🌊"</p>
+          <span class="text-[9px] font-sans text-softbrown/70 uppercase tracking-widest block mt-0.5">Moment #8</span>
+        </div>
+      </div><div class="polaroid-card group bg-white p-3 pb-5 rounded-xl shadow-md hover:shadow-2xl border border-[#EDE4D5] transform rotate-1 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer relative" onclick="openPhotoModal(8)">
+        <!-- Washi Tape sticker on top -->
+        <div class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-14 h-4 bg-blush-200/60 border-dustyrose/30 border-x rounded-xs shadow-xs z-10"></div>
+        
+        <!-- Category Stamp Badge -->
+        <div class="absolute top-2 right-2 z-10">
+          <span class="text-[8px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-blush-400/90 text-white backdrop-blur-xs font-sans">
+            Lady ✨
+          </span>
+        </div>
+
+        <div class="w-full aspect-[4/3] rounded overflow-hidden relative shadow-inner bg-blush-50">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTSwXxSWdgzUOYqavN_VEh6Rn9PaJ9m12E11SMWo-mr_fXxKkR5tieELifEFkCdeekwiQzYHh2Wf3LaIafzQfjrtYR8U3insSCfr6iAfqxXdncc0-p159RjozlOZ4vftgr_vGWu47lQfYo3H4TYtzxczdgvrnCZu8NbxOACXVWGS5XW4OnEbenS_BUWzX9PgiVlXfjd4cwHZk5DJLRtnVUeop66L08uNyLUPHKhB0NNWBa0tznOoQMjsSE5QLifGxcQQ" alt="Golden Hour Glow ✨" class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500">
+          <span class="absolute bottom-1.5 left-1.5 bg-black/60 backdrop-blur-sm text-[8px] font-sans px-1.5 py-0.5 rounded text-white tracking-widest uppercase">
+            Film Nostalgia
+          </span>
+        </div>
+        <div class="mt-3 text-center px-1">
+          <p class="font-script text-lg sm:text-xl text-charcoal leading-snug line-clamp-1">"Golden Hour Glow ✨"</p>
+          <span class="text-[9px] font-sans text-softbrown/70 uppercase tracking-widest block mt-0.5">Moment #9</span>
+        </div>
+      </div><div class="polaroid-card group bg-white p-3 pb-5 rounded-xl shadow-md hover:shadow-2xl border border-[#EDE4D5] transform -rotate-1 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer relative" onclick="openPhotoModal(9)">
+        <!-- Washi Tape sticker on top -->
+        <div class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-14 h-4 bg-champagne-light/90 border-champagne/40 border-x rounded-xs shadow-xs z-10"></div>
+        
+        <!-- Category Stamp Badge -->
+        <div class="absolute top-2 right-2 z-10">
+          <span class="text-[8px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-blush-400/90 text-white backdrop-blur-xs font-sans">
+            Lady ✨
+          </span>
+        </div>
+
+        <div class="w-full aspect-[4/3] rounded overflow-hidden relative shadow-inner bg-blush-50">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBn3pLlV2m963GQBG7B1K3TRY5pqSwUFuJZYx0VnG1nLneLilJKbxUADH-beObV5MfmACTtxP7kDf2r5zPUdv5yO1vwNvxkxK0Bc50xyBlgY5jtuOkGHawy1tU_xUY7nFYgOxYcK1JXfNDhia4c7T7hEpz9zr1tIX2XS-dn7x8TsRUdhcYrtZU3P0Ohfc-UHT6mjASbUWj5LPQKAnE3y8x0HvwiB--xccP9xoFhuuJ9sL9P1D_Y4Fb_1pG84iij3C88nw" alt="The sweetest everyday smile 🥤" class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500">
+          <span class="absolute bottom-1.5 left-1.5 bg-black/60 backdrop-blur-sm text-[8px] font-sans px-1.5 py-0.5 rounded text-white tracking-widest uppercase">
+            Everyday Joy
+          </span>
+        </div>
+        <div class="mt-3 text-center px-1">
+          <p class="font-script text-lg sm:text-xl text-charcoal leading-snug line-clamp-1">"The sweetest everyday smile 🥤"</p>
+          <span class="text-[9px] font-sans text-softbrown/70 uppercase tracking-widest block mt-0.5">Moment #10</span>
+        </div>
+      </div><div class="polaroid-card group bg-white p-3 pb-5 rounded-xl shadow-md hover:shadow-2xl border border-[#EDE4D5] transform rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer relative" onclick="openPhotoModal(10)">
+        <!-- Washi Tape sticker on top -->
+        <div class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-14 h-4 bg-[#F0E4D0]/80 border-champagne/40 border-x rounded-xs shadow-xs z-10"></div>
+        
+        <!-- Category Stamp Badge -->
+        <div class="absolute top-2 right-2 z-10">
+          <span class="text-[8px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-blush-400/90 text-white backdrop-blur-xs font-sans">
+            Lady ✨
+          </span>
+        </div>
+
+        <div class="w-full aspect-[4/3] rounded overflow-hidden relative shadow-inner bg-blush-50">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbjIjnltav-WD_4f7BGGdhsK6FqtuJdQh0svURDXIPJDx7WcySRXAIXxtVrs11bQaKH1JiIIFBsXYIoh8c6LX44TzL-rEzlgpQZOgrsP_vC6lhujRWlp4G2FtC1hHIiSnBvTCyA5OFVu9YYyVSXIHQzYkTo-gtk87J-eVO_6peZU1ATOYb9lFNKrQ-98065yRQA6cXmZe_g5Duo6euKKzUaX4MGGGWg2j9EhwkVlMMswxrlLW_hZ8LFCyTfCdgbKnnvw" alt="Snack time joy 🍯" class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500">
+          <span class="absolute bottom-1.5 left-1.5 bg-black/60 backdrop-blur-sm text-[8px] font-sans px-1.5 py-0.5 rounded text-white tracking-widest uppercase">
+            Sweet Bites
+          </span>
+        </div>
+        <div class="mt-3 text-center px-1">
+          <p class="font-script text-lg sm:text-xl text-charcoal leading-snug line-clamp-1">"Snack time joy 🍯"</p>
+          <span class="text-[9px] font-sans text-softbrown/70 uppercase tracking-widest block mt-0.5">Moment #11</span>
+        </div>
+      </div><div class="polaroid-card group bg-white p-3 pb-5 rounded-xl shadow-md hover:shadow-2xl border border-[#EDE4D5] transform -rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer relative" onclick="openPhotoModal(11)">
+        <!-- Washi Tape sticker on top -->
+        <div class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-14 h-4 bg-blush-200/60 border-dustyrose/30 border-x rounded-xs shadow-xs z-10"></div>
+        
+        <!-- Category Stamp Badge -->
+        <div class="absolute top-2 right-2 z-10">
+          <span class="text-[8px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-blush-400/90 text-white backdrop-blur-xs font-sans">
+            Lady ✨
+          </span>
+        </div>
+
+        <div class="w-full aspect-[4/3] rounded overflow-hidden relative shadow-inner bg-blush-50">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzrEN09K8dX9YYuigXbyRsB3_OsrpowmBLITocHvWv0H1lJxGlNV8Ow4VXctq37Vgiv2BF5P3xnj1rm2FjUv0TqKseV9OcMbyMHLde_64rwJgEXSq4nVIMjHMTgzRgvDvZL7x9iCI9xeB4lNOvNNI2Jb-6HitJqxpCUodFNoO4Ru2BSF-COx8qTXz-w-aOnJFJa4NvJt4Gl96PttSkTZHwm39r-w0quZJ4TRdUOZGHTuhdVoJqor8TXV49GbbQQAVYsQ" alt="Pure cute energy 🌸" class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500">
+          <span class="absolute bottom-1.5 left-1.5 bg-black/60 backdrop-blur-sm text-[8px] font-sans px-1.5 py-0.5 rounded text-white tracking-widest uppercase">
+            Playful Mood
+          </span>
+        </div>
+        <div class="mt-3 text-center px-1">
+          <p class="font-script text-lg sm:text-xl text-charcoal leading-snug line-clamp-1">"Pure cute energy 🌸"</p>
+          <span class="text-[9px] font-sans text-softbrown/70 uppercase tracking-widest block mt-0.5">Moment #12</span>
+        </div>
+      </div><div class="polaroid-card group bg-white p-3 pb-5 rounded-xl shadow-md hover:shadow-2xl border border-[#EDE4D5] transform rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer relative" onclick="openPhotoModal(12)">
+        <!-- Washi Tape sticker on top -->
+        <div class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-14 h-4 bg-champagne-light/90 border-champagne/40 border-x rounded-xs shadow-xs z-10"></div>
+        
+        <!-- Category Stamp Badge -->
+        <div class="absolute top-2 right-2 z-10">
+          <span class="text-[8px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-blush-400/90 text-white backdrop-blur-xs font-sans">
+            Lady ✨
+          </span>
+        </div>
+
+        <div class="w-full aspect-[4/3] rounded overflow-hidden relative shadow-inner bg-blush-50">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQLkp9Hu9RD2BozO2RdkieY4yJUP5qLyBDszzw0swxaSp-JFsV1UW9Y_gkSR8_Uu1n9oGoT63CuE0PVIuBzIXQnSfz1yID68ehoGRaGWwkap76WSBFzz3qduNwVx3GelG9qYbOKZe3XWgVn-ou0R-oCfLtObfOJurnvRP_hG2g69tFLch9VrIPzluYO-_Gn6RQwAK90Pviyi9cwzJgtfsaxMlgC8Z7DD8a6wRsRkLH-50hq-_Mzz9F9RTlQx5e_LeGbQ" alt="Movie dates &amp; laughter 🍿" class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500">
+          <span class="absolute bottom-1.5 left-1.5 bg-black/60 backdrop-blur-sm text-[8px] font-sans px-1.5 py-0.5 rounded text-white tracking-widest uppercase">
+            Cinema Night
+          </span>
+        </div>
+        <div class="mt-3 text-center px-1">
+          <p class="font-script text-lg sm:text-xl text-charcoal leading-snug line-clamp-1">"Movie dates &amp; laughter 🍿"</p>
+          <span class="text-[9px] font-sans text-softbrown/70 uppercase tracking-widest block mt-0.5">Moment #13</span>
+        </div>
+      </div><div class="polaroid-card group bg-white p-3 pb-5 rounded-xl shadow-md hover:shadow-2xl border border-[#EDE4D5] transform -rotate-1 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer relative" onclick="openPhotoModal(13)">
+        <!-- Washi Tape sticker on top -->
+        <div class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-14 h-4 bg-[#F0E4D0]/80 border-champagne/40 border-x rounded-xs shadow-xs z-10"></div>
+        
+        <!-- Category Stamp Badge -->
+        <div class="absolute top-2 right-2 z-10">
+          <span class="text-[8px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-blush-400/90 text-white backdrop-blur-xs font-sans">
+            Lady ✨
+          </span>
+        </div>
+
+        <div class="w-full aspect-[4/3] rounded overflow-hidden relative shadow-inner bg-blush-50">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZgDujc8n7iQkz_KjSXXmdjyT1qeTUBFhq3QOa6jzdEH78b5USWGQ1vjnQXogQVobtlL4p725YaDwgjmjhUBpCEwA2OFNXudGIntXee5xvlyver8lYBoL6CYvroFz66SCWwSSi5ufM0UQ7MZ9niWxZJQFp6CDQf-DSUTe1vFYXlGtulu6oVM2FHtBINJWUSILa3YsAMVWrx9kIBg0eNdgMhSFFiz8utKwrlrvQ45S57KFuUykfuosjCgOomce__NawsQ" alt="Cozy moments &amp; endless warmth 🎀" class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500">
+          <span class="absolute bottom-1.5 left-1.5 bg-black/60 backdrop-blur-sm text-[8px] font-sans px-1.5 py-0.5 rounded text-white tracking-widest uppercase">
+            Cozy Comfort
+          </span>
+        </div>
+        <div class="mt-3 text-center px-1">
+          <p class="font-script text-lg sm:text-xl text-charcoal leading-snug line-clamp-1">"Cozy moments &amp; endless warmth 🎀"</p>
+          <span class="text-[9px] font-sans text-softbrown/70 uppercase tracking-widest block mt-0.5">Moment #14</span>
+        </div>
+      </div></div>
+<div class="text-center pb-2">
+<button class="px-8 py-3 rounded-full bg-softbrown text-white text-xs uppercase tracking-widest hover:bg-dustyrose transition-all shadow hover:shadow-lg hover:scale-105 active:scale-95" id="galleryContinueBtn">
+          Time for Cake 🎂 →
+        </button>
+</div>
+</section>
+<!-- ==================== SCENE 06: THE BIRTHDAY CAKE ==================== -->
+<section class="absolute inset-0 flex flex-col items-center justify-center p-6 transition-all duration-1000 opacity-0 pointer-events-none z-20" id="scene6">
+<div class="text-center max-w-lg w-full flex flex-col items-center">
+<p class="font-serif italic text-softbrown/80 text-lg">Okay... enough memories.</p>
+<h2 class="font-display text-3xl sm:text-4xl text-charcoal mt-1 mb-8">It's time for cake. 🎂</h2>
+<!-- Interactive 2-Tier Cake with 19 Candles -->
+<div class="relative w-64 sm:w-72 flex flex-col items-center my-4 transition-transform duration-700" id="cakeContainer">
+<!-- Candles Layer (19 Candles) -->
+<div class="w-full flex justify-center items-end gap-1 sm:gap-1.5 mb-1 px-4 relative z-10" id="candlesRow"></div>
+<!-- Top Tier -->
+<div class="w-40 sm:w-48 h-20 bg-gradient-to-b from-[#FFFDF9] via-[#FAF4E9] to-[#F1E4D0] rounded-t-2xl border-t-2 border-x border-[#E6D4BD] shadow-inner relative flex items-center justify-center overflow-hidden">
+<div class="absolute top-0 inset-x-0 h-4 bg-gradient-to-b from-champagne-gold/40 to-transparent"></div>
+<div class="flex space-x-1.5 absolute bottom-1">
+<span class="w-2 h-2 rounded-full bg-white shadow-xs border border-champagne/40"></span>
+<span class="w-2 h-2 rounded-full bg-white shadow-xs border border-champagne/40"></span>
+<span class="w-2 h-2 rounded-full bg-white shadow-xs border border-champagne/40"></span>
+<span class="w-2 h-2 rounded-full bg-white shadow-xs border border-champagne/40"></span>
+</div>
+<span class="font-serif italic text-xs text-softbrown/60 tracking-wider">19 Years of Grace</span>
+</div>
+<!-- Bottom Tier -->
+<div class="w-56 sm:w-64 h-24 bg-gradient-to-b from-[#FFFDF9] via-[#F8EFE0] to-[#EAD8BF] rounded-t-2xl border-t-2 border-x border-[#DEC5A7] shadow-md relative flex items-center justify-center">
+<div class="absolute inset-x-0 h-4 bg-dustyrose/20 border-y border-dustyrose/30 flex items-center justify-center">
+<span class="text-[9px] uppercase tracking-widest text-dustyrose font-sans font-semibold">Lady Juwita</span>
+</div>
+</div>
+<!-- Cake Stand/Platter -->
+<div class="w-64 sm:w-72 h-4 bg-gradient-to-r from-[#DFD7CB] via-[#F8F5EF] to-[#DFD7CB] rounded-full shadow-lg border border-[#D1C3B2]"></div>
+<div class="w-24 h-4 bg-[#C8B8A2] rounded-b-lg shadow"></div>
+</div>
+<p class="font-serif italic text-softbrown text-sm sm:text-base mt-6 mb-6">
+          19 candles glowing for 19 years of warmth, dreams, and light.
+        </p>
+<button class="px-8 py-3.5 rounded-full bg-gradient-to-r from-dustyrose to-champagne-gold text-white text-xs uppercase tracking-widest shadow-md hover:shadow-xl hover:scale-105 active:scale-95 transition-all" id="cakeWishBtn">
+          Make a Wish ✨
+        </button>
+</div>
+</section>
+<!-- ==================== SCENE 07: MAKE A WISH ==================== -->
+<section class="absolute inset-0 flex flex-col items-center justify-center p-6 transition-all duration-1000 opacity-0 pointer-events-none z-20 bg-charcoal/90 text-ivory-50" id="scene7">
+<div class="text-center max-w-md w-full flex flex-col items-center">
+<!-- Floating flame icon -->
+<div class="w-12 h-12 rounded-full bg-champagne-gold/20 flex items-center justify-center mb-6 animate-pulse">
+<div class="w-6 h-6 rounded-full bg-gradient-to-t from-amber-400 to-yellow-100 blur-[2px] flame-anim"></div>
+</div>
+<h3 class="font-serif italic text-2xl sm:text-3xl text-ivory-100 mb-2 font-light" id="wishPromptTitle">
+          Close your eyes...
+        </h3>
+<p class="font-serif text-lg text-ivory-200/80 italic mb-8" id="wishPromptSub">
+          Make a wish for this new chapter.
+        </p>
+<!-- Mic status or Blow Button -->
+<div class="space-y-4 w-full">
+<button class="w-full sm:w-auto px-10 py-4 rounded-full bg-gradient-to-r from-champagne-gold to-blush-400 text-charcoal font-sans font-semibold text-xs uppercase tracking-widest shadow-2xl hover:scale-105 active:scale-95 transition-all" id="blowCandlesBtn">
+            💨 Blow the Candles (Click or Blow)
+          </button>
+<p class="text-[11px] text-ivory-200/50 font-sans tracking-wide" id="micHintText">
+            Tip: You can click the button, or blow gently near your microphone!
+          </p>
+</div>
+</div>
+</section>
+<!-- ==================== SCENE 08: THE SURPRISE ==================== -->
+<section class="absolute inset-0 flex flex-col items-center justify-center p-6 transition-all duration-1000 opacity-0 pointer-events-none z-20 bg-[#161413] text-ivory-100" id="scene8">
+<div class="text-center max-w-lg w-full flex flex-col items-center">
+<!-- Collage cluster preview with couple & funny photos -->
+<div class="mb-6 relative flex items-center justify-center w-64 h-36">
+<!-- Photo 1: couple funny selfie -->
+<div class="absolute -left-2 top-0 w-24 bg-white/95 p-1.5 pb-3 rounded shadow-2xl border border-champagne/40 transform -rotate-12 transition-transform duration-300 hover:scale-110 hover:z-30">
+<div class="w-full h-20 rounded overflow-hidden">
+<img alt="Couple Moment" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOl4M0HkcRaxcbcZhrj8zAMiStobYBR_g0_QpcFZy41pLm9ltObIrLlJgqFZBfzV4u1jKPOeq1C624YdOV_mKhVhJ6GycliXcUN8O696uX7PgeUuwzmaVTg-uhpPIF9svluCMEQ2EnAYgvsYuGSj6sfvCFJszkrlwEVtwH6GCdVKyoiRdIM_VFYB-Rr7VlZbBIITIPPXAdnNmsYoCfiPAUX7YfJj9nRLW0ZIFW_H8RQZxA5tG4JrOJbSt2B-5yr1zmkw">
+</div>
+<p class="font-script text-[9px] text-center text-softbrown mt-1">Us 🤍</p>
+</div>
+<!-- Photo 2: center funny curlers filter -->
+<div class="relative z-20 w-28 bg-white p-2 pb-4 rounded-lg shadow-2xl border border-champagne-gold transform rotate-2 hover:scale-110 hover:rotate-0 transition-transform duration-300">
+<div class="w-full h-24 rounded overflow-hidden">
+<img alt="Lady Silly Moment" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtMfWT33dsuUpfdXgxZT9T2sJy4ihF62AtAOKorD3fn9hzo1R96Dd9Wa_3-7_e-OiGEW8fiiNRf03tJE0re2Hu6wVXKhFMDk5yRqJUOpYvukXPSMvXhtIlDN0F1TbSLxR18oK_rMSxCoxkOruEKtnokR6kHwmKO5fTm1CYJd3QOutyNRZrYfd6PlVEnJsrKzBGCZWmIAw1b067q0gERrVN4YUOh6lVlsjqWnqdLIB0LwPKlao1xEJJizVuaZVeUQnVVg">
+</div>
+<p class="font-script text-[11px] text-center text-dustyrose mt-1">Unstoppable Laughs 🤪</p>
+</div>
+<!-- Photo 3: late night helmet ride -->
+<div class="absolute -right-2 top-2 w-24 bg-white/95 p-1.5 pb-3 rounded shadow-2xl border border-champagne/40 transform rotate-12 transition-transform duration-300 hover:scale-110 hover:z-30">
+<div class="w-full h-20 rounded overflow-hidden">
+<img alt="Night Ride" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9oF-nnaKyFCemM0AfBUpm5H-yo5OJ8y4RH3wfC483fpFISLiK1bPxDPlyiTqlHRR1PNDUrLJPHBTLu3RiewUP2I3Sg7b4_qu-cjsQQjlxkVupXX1XGhsP1tE1rm80uJIEmYGumPNMzex8JSykj3vUVg_sTpJk2AQX5KkaWQoqfsmFbULhY-EvTLlDFqSeb2UV2QlSV1Rlp9vcAccTWZk37zWeKKUNPM10A84beo08L7YcUONz4jWqjpktDfLdf2nYVw">
+</div>
+<p class="font-script text-[9px] text-center text-softbrown mt-1">Midnight Rides 🛵</p>
+</div>
+<div class="absolute -inset-4 bg-champagne-gold/20 rounded-full blur-2xl -z-10 animate-pulse"></div>
+</div>
+<div class="w-4 h-4 rounded-full bg-champagne-gold shadow-[0_0_25px_8px_rgba(216,184,136,0.8)] mb-6 animate-pulse-glow" id="surpriseSpark"></div>
+<p class="font-serif italic text-xl text-ivory-200/70 mb-2">Wait...</p>
+<p class="font-display text-2xl sm:text-3xl text-champagne-light mb-6">There's one more thing.</p>
+<div class="flex flex-col sm:flex-row gap-3 items-center justify-center">
+  <button class="px-8 py-3.5 rounded-full bg-gradient-to-r from-dustyrose via-champagne-gold to-blush-300 text-charcoal font-semibold text-xs uppercase tracking-widest shadow-xl hover:scale-110 active:scale-95 transition-all" id="openSurpriseBtn">
+    Open Your Surprise 🎁
+  </button>
+  <button class="px-6 py-3.5 rounded-full bg-white/10 border border-champagne-gold/60 text-champagne-light font-semibold text-xs uppercase tracking-widest shadow hover:scale-105 active:scale-95 transition-all hover:bg-white/20" id="openLoveCouponsBtn">
+    🎟️ Love Coupons
+  </button>
+</div>
+</div>
+</section>
+<!-- ==================== SCENE 09: FINAL BIRTHDAY MESSAGE ==================== -->
+<section class="absolute inset-0 flex flex-col items-center justify-between p-6 sm:p-10 transition-all duration-1000 opacity-0 pointer-events-none z-20 overflow-y-auto" id="scene9">
+<!-- Ghost watermark 19 in background -->
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none -z-10 select-none">
+<span class="text-[180px] sm:text-[280px] font-display font-bold text-blush-100/50 leading-none">19</span>
+</div>
+<!-- Top Emblem with Lady's portrait & cute couple peek badges -->
+<div class="pt-4 text-center">
+<div class="inline-flex items-center gap-3">
+<!-- Mini Polaroids alongside Queen circle -->
+<div class="hidden sm:block w-14 bg-white p-1 pb-2 rounded shadow-md border border-champagne/40 transform -rotate-6 hover:rotate-0 transition-transform">
+<div class="w-full aspect-square rounded overflow-hidden">
+<img alt="Funny Moment" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAI7XXgCJQTBWF3M_1Vhwf0BNMaf1o3MPd0mD1ljb49fe50CEu5do8K69UzDzJa4TO80eGmQBnJ-SUHHmxNHUHWDilOxP2gaWAvg8UpL9eIPCsWUbuSrx3JecKsGmxorHHJBPYUm7xolCacvnWIY7_CaXbPxWXrcpZdz72lqi0Q6Dk2UKzF_yjE7xXR4eQF4ceAV8CWUMaAGKfHoGzFc_cFuoS5M6ji2936aR4pCij43CoZsVE9DLk3Srq9aVOvA6sXjA">
+</div>
+<p class="text-[7px] font-sans text-center text-softbrown mt-0.5">Silly 😝</p>
+</div>
+<!-- Main Portrait -->
+<div class="inline-flex flex-col items-center group">
+<div class="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full p-1 bg-gradient-to-tr from-champagne-gold via-blush-300 to-champagne-light shadow-xl animate-pulse-glow">
+<div class="w-full h-full rounded-full overflow-hidden border-2 border-white">
+<img alt="Birthday Girl" class="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBxqGNC9nfrhdnaPVvlfjW9UCYkH8qf1-1PKHVSc3xCLzlfMjcmzrbjgAXUtk4ikBYDDVXSeeN8rAsWTSRjZKr9YUZyn8wtvwBPABTlLArrbibwqPgRHJ5hIQxBADodSpfwEpmaI_sNTIB_9zh94td9G_ju2abtr-O6DSzxWN78jSE3jk3vp_7oA7FRfr88I358JzY4dCDKNmwkOVzeU8lsmUeTFzIDTQVWWp5zc45kK2j5nGjW0FV-nweW4wgbeUC6g">
+</div>
+<div class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-champagne-gold text-white flex items-center justify-center text-xs shadow-md border border-white">👑</div>
+</div>
+<div class="mt-2 px-3 py-0.5 rounded-full bg-champagne-light/90 border border-champagne/40 text-[10px] font-sans tracking-widest uppercase text-softbrown font-semibold shadow-xs">Our Birthday Girl 👑</div>
+</div>
+<div class="hidden sm:block w-14 bg-white p-1 pb-2 rounded shadow-md border border-champagne/40 transform rotate-6 hover:rotate-0 transition-transform">
+<div class="w-full aspect-square rounded overflow-hidden">
+<img alt="Hiking Walk" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE3CFZs5DQV4EbtnZQ4kCYGHrectRt1tGEg-uU-tNhui4ewo4XahjhcA5fw5-toRsTBsx6qcGK_JeahZSBTDRrw5vyM2mxsRMDwx6n9p7tqoJnW_AeaIcIRA1zXUcsBDd8xW4pJ8RMaIUd2GdxUe_0B8n-Ve-v_VsNiHDcMQHqF-HgNUKOBRwDH2ttX_6wAQSIo8lt2DEjIEBcgmld9InB0oO6NWgh0oGcXwaAeJP1B3CJ3CPa16YvB7-vqZv5hbiSqw">
+</div>
+<p class="text-[7px] font-sans text-center text-softbrown mt-0.5">Cap vibes 🧢</p>
+</div>
+</div>
+</div>
+<!-- Emotional Message Card -->
+<div class="max-w-xl w-full bg-white/75 backdrop-blur-md rounded-3xl p-8 sm:p-12 shadow-2xl border border-champagne/40 text-center my-auto space-y-6">
+<span class="text-xs uppercase tracking-[0.25em] text-champagne-dark font-sans font-medium">To Our Dear</span>
+<h1 class="font-display text-3xl sm:text-4xl text-charcoal font-semibold">
+          Lady Juwita Lagwina Sinaga
+        </h1>
+<div class="w-12 h-0.5 bg-champagne-gold/60 mx-auto"></div>
+<p class="font-serif italic text-xl sm:text-2xl text-softbrown leading-relaxed">
+          "Happy 19th Birthday, Lady."
+        </p>
+<p class="font-serif text-base sm:text-lg text-softbrown/90 leading-relaxed font-light">
+          May 19 be the beginning of a beautiful new chapter. Filled with genuine warmth, spontaneous laughter, sweet late-night motorcycle rides, and dreams taking flight.
+        </p>
+<p class="font-serif italic text-base sm:text-lg text-dustyrose font-normal">
+          "Keep smiling, keep dreaming, and keep being wonderfully you."
+        </p>
+<div class="pt-2 text-2xl text-dustyrose animate-bounce">
+          🤍
+        </div>
+</div>
+
+<!-- ===== LOVE JAR ===== -->
+<div class="max-w-xl w-full mt-4 mb-2">
+  <div class="bg-white/70 backdrop-blur-md rounded-3xl border border-champagne/40 shadow-xl p-6 sm:p-8 text-center">
+    <p class="text-xs uppercase tracking-[0.2em] text-champagne-dark font-sans font-medium mb-1">A Little Gift for You</p>
+    <h3 class="font-display text-xl sm:text-2xl text-charcoal mb-1">💌 Love Jar</h3>
+    <p class="font-serif italic text-sm text-softbrown/80 mb-4">"Tap the jar to pick a secret note..."</p>
+    <!-- The Jar -->
+    <div class="relative inline-block cursor-pointer group mb-4" id="loveJarBtn" title="Klik toplesnya!">
+      <div class="text-7xl sm:text-8xl select-none group-hover:scale-110 transition-transform duration-300 drop-shadow-md" id="loveJarEmoji">🫙</div>
+      <div class="absolute -inset-3 bg-champagne/20 rounded-full blur-xl -z-10 group-hover:bg-champagne/40 transition-all"></div>
+      <span class="text-[10px] font-sans uppercase tracking-widest text-softbrown/60 block mt-1">Tap me ✨</span>
+    </div>
+    <!-- Note reveal area -->
+    <div class="hidden min-h-[70px] flex-col items-center justify-center" id="loveJarNoteArea">
+      <div class="bg-champagne-light/80 border border-champagne/50 rounded-2xl px-5 py-4 max-w-xs mx-auto note-unfold" id="loveJarNote">
+        <span class="text-lg mb-1 block">📜</span>
+        <p class="font-serif italic text-base text-softbrown leading-relaxed" id="loveJarNoteText"></p>
+      </div>
+      <button class="mt-3 text-xs font-sans uppercase tracking-widest text-champagne-dark hover:text-dustyrose transition" id="loveJarNextBtn">Pick another note →</button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer & Replay -->
+<div class="pb-4 text-center space-y-3">
+<div class="flex flex-wrap items-center justify-center gap-3">
+  <button class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-white/80 border border-champagne/40 text-softbrown hover:text-dustyrose text-xs uppercase tracking-widest font-sans shadow-sm hover:shadow transition-all" id="replayBtn">
+    <span>Replay the Story</span>
+    <span>↻</span>
+  </button>
+  <button class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-gradient-to-r from-dustyrose to-champagne-gold text-white text-xs uppercase tracking-widest font-sans shadow hover:shadow-lg hover:scale-105 transition-all" id="openLoveCouponsBtn9">
+    🎟️ Love Coupons
+  </button>
+</div>
+<p class="text-[11px] font-sans text-softbrown/50 tracking-wide">
+          Made with love &amp; a collection of our warmest memories.
+        </p>
+</div>
+</section>
+</main>
+
+<!-- ===== LOVE COUPONS MODAL ===== -->
+<div class="fixed inset-0 z-[60] bg-black/70 backdrop-blur-sm flex items-center justify-center p-4 hidden opacity-0 transition-opacity duration-300" id="loveCouponsModal">
+  <div class="relative max-w-lg w-full">
+    <!-- Close -->
+    <button class="absolute -top-4 -right-4 w-9 h-9 rounded-full bg-white/90 border border-champagne/40 flex items-center justify-center text-softbrown hover:text-dustyrose shadow-lg z-10 text-sm transition-all hover:scale-110" id="closeLoveCouponsBtn">✕</button>
+    <!-- Header -->
+    <div class="text-center mb-4">
+      <span class="text-xs uppercase tracking-[0.25em] text-champagne-dark font-sans font-medium">A Special Gift</span>
+      <h2 class="font-display text-3xl text-charcoal mt-0.5">Love Coupons 🎟️</h2>
+      <p class="font-serif italic text-sm text-softbrown/80 mt-1">"Redeemable anytime, valid forever 🤍"</p>
+    </div>
+    <!-- Coupon Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3" id="loveCouponsGrid"></div>
+    <p class="text-center text-[11px] font-sans text-softbrown/40 mt-4 tracking-wide">* Click the button on each coupon to redeem it</p>
+  </div>
+</div>
+
+<!-- Photo Fullscreen Modal (Scene 05) -->
+<div class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6 hidden opacity-0 transition-opacity duration-300" id="photoModal">
+<div class="max-w-lg w-full bg-white p-5 sm:p-6 rounded-2xl shadow-2xl text-center relative border border-champagne/40">
+<button class="absolute top-4 right-4 w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 hover:text-black z-20" onclick="closePhotoModal()">✕</button>
+<div class="w-full aspect-[4/3] rounded-lg bg-blush-50 mb-4 flex items-center justify-center overflow-hidden shadow-inner" id="photoModalContent">
+<img alt="Lady Moment" class="w-full h-full object-cover object-center" id="modalActiveImg" src="">
+</div>
+<h3 class="font-serif italic text-xl sm:text-2xl text-charcoal" id="photoModalTitle">"A Little Moment"</h3>
+<p class="text-xs font-serif italic text-dustyrose mt-1" id="photoModalDesc">Lady Juwita • 19th Birthday Archive</p>
+<span class="inline-block mt-3 px-3 py-0.5 rounded-full bg-champagne-light text-champagne-dark text-[9px] uppercase tracking-widest font-sans font-semibold" id="photoModalTag">Special Memory</span>
+</div>
+</div>
+<!-- Easter Egg Modal Dialog -->
+<div class="fixed inset-0 z-50 bg-charcoal/70 backdrop-blur-md flex items-center justify-center p-6 hidden opacity-0 transition-opacity duration-500" id="easterEggModal">
+<div class="max-w-md w-full bg-ivory-50 border border-champagne-gold/60 p-8 rounded-3xl shadow-2xl text-center space-y-4 transform scale-95 transition-transform duration-300">
+<div class="w-12 h-12 rounded-full bg-champagne-light border border-champagne-gold mx-auto flex items-center justify-center text-champagne-gold text-xl font-bold">✨</div>
+<h3 class="font-display text-2xl text-charcoal">You found the secret 🤍</h3>
+<p class="font-serif italic text-lg text-dustyrose">"I guess 19 really is your number."</p>
+<p class="text-xs font-sans text-softbrown/70 leading-relaxed">
+        A small hidden wish just for you: May every day of your 19th year bring a pleasant surprise as lovely as you are!
+      </p>
+<button class="mt-4 px-6 py-2.5 rounded-full bg-dustyrose text-white text-xs uppercase tracking-widest shadow hover:scale-105 transition-all" onclick="closeEasterEgg()">
+        Close with a Smile
+      </button>
+</div>
+</div>
+<!-- Javascript Logic for Story Navigation, Sound, Particles, Mic, Photo Gallery -->
+<script>
+    /* ==========================================================
+       1. GLOBAL STATE & SOUND SYNTHESIZER
+       ========================================================== */
+    let currentScene = 1;
+    let audioCtx = null;
+    let isMusicPlaying = false;
+    let musicInterval = null;
+    let easterEggClicks = 0;
+    let openedCards = new Set();
+
+    // 19 Things list items with specific photo highlights!
+    const nineteenThings = [
+      { id: 1, title: "01", text: "Your smile that brightens any room.", photo: "https://lh3.googleusercontent.com/aida-public/AB6AXuBpdhOmMa0md7aElyi-udWksj_In7INFDVPlNSYxGyXi19N9P_lcFTLmAcOGFGFSaHLVaMiwNg9_KuGTMW5uZq5zLC6u3bl7eNWC2zZLH--xZLxDbf1IsmssFrogq2aAh_rk9Xd5bveesYLjBVhazkRkA4ZCXf9b7ACiZg9HJBPLn67Mmt_b68aKC8Hzi_yihh9fdrUG4FSmXvSpx3J70zZneiwRMSdn3ZGqIMyYoOzAGj1DHFwaQJslI7tDJp5Kpxqng" },
+      { id: 2, title: "02", text: "Your infectious, heartwarming laugh 🤪", photo: "https://lh3.googleusercontent.com/aida-public/AB6AXuDEFncQEtHEe-4luwXHanwoVa3hnyr4VpIY-XG8kiTBz6V6VoWaAInQ7L8Hkr9zQkozIw_YV1_bkStcltaZHz3udowIJxuAdHt_2gxcPWwA8yCDF8Ohc6Pa00SX68eIzzvbvBvU3fSnmApK3wGdxRl-OGFXkm3OUK9ucIDN7zZVJ5arbq3kr0coTN9ZvdEovFKbDw-GXTJWRCq6TiOQ3EajYtK-RsKfYMNb6Te1QAMHqYRN3_b6xvICNSO-5oa2ZcU6og" },
+      { id: 3, title: "03", text: "Your vibrant, uplifting energy." },
+      { id: 4, title: "04", text: "The thoughtful way you care for others." },
+      { id: 5, title: "05", text: "Your adorable, one-of-a-kind little habits." },
+      { id: 6, title: "06", text: "Your gentle and selfless kindness." },
+      { id: 7, title: "07", text: "Your quiet, graceful confidence." },
+      { id: 8, title: "08", text: "Our midnight rides & spontaneous stories 🛵", photo: "https://lh3.googleusercontent.com/aida-public/AB6AXuD4e2rsbL8GUtgY0Bd7IzceLSY6MtzLcwCupsixpwKXQKqFSuTZMXsPMgSLsoDgkZ78DQAYKOpJ25mgDZ5OpJ-fuMF0_E8FWya-5UT7ZKUTiv6_HI6030q_7ZSQZo2i7T9qfNuVbg1mVd6bwfgcebvb88d4O1uo2V4oDM1AZeG0UXjh_OFPVv_xomQczpzGVKx4bsk74Oio2MGUI-VsuRJvgw9OgeV8EZFTuMs15esS_-zwb5p8ww7zoK_HE4vj7z61lA" },
+      { id: 9, title: "09", text: "Your radiant, lovely personality.", photo: "https://lh3.googleusercontent.com/aida-public/AB6AXuDn3srJmOmxggCF0g0YYCteuApVTIMeIZcRWBIBkx9Z_kUuOeeC4rrGhdq1xQzMq2H4r2De0n7hINV9S-7FHW7OfgQgOrtjz0dW2RUvVvssbtUZtvQS5hmB-ia2xUWICBfv142wJqWkTF0-07xr0EV1uS0OtMkYdZaAro-6XXt5awt1JBQSx5UEsmJpIX7G61zUVikdnkvm71ra0YxHScw-9MmpNHNUYbfv7oW2wxAcNncS9vTJvt9aXtwzsHFqOTiJvg" },
+      { id: 10, title: "10", text: "Your calming presence when life gets busy." },
+      { id: 11, title: "11", text: "Your playful, witty sense of humor." },
+      { id: 12, title: "12", text: "The fierce ambition behind your dreams." },
+      { id: 13, title: "13", text: "Your quiet courage in facing new things." },
+      { id: 14, title: "14", text: "Outdoor trails & cap vibe moods 🧢", photo: "https://lh3.googleusercontent.com/aida-public/AB6AXuDRY1xMpialmHvgZPATIb11KgM7z6CITZO_NcjOIcS6XW0QS4QNLzOQQBYkAubOgweTORytYNwlDDVT3vsh0xF7QarQGulM3lIertkOEBysjDjQaJoU68a1ulmbm6z-7Q4V7sY_NkYVmircZZBiquzHMg6ZtuJKeCGdfYyuhHESUpXong1yhzr_84KF5iNReq_Z1b1P21G7bmnD_IHtPWRvAoqdQS0vAp_qjUnnMMd8Zz1W2u9g0QajRoXosiMKUCUnvg" },
+      { id: 15, title: "15", text: "The warmth you bring to every conversation." },
+      { id: 16, title: "16", text: "Your beautifully goofy, playful chaos 😝", photo: "https://lh3.googleusercontent.com/aida-public/AB6AXuA6v1iIwTyZrOkOmpXwAIt3NRE8SHyhC-Nlmi868xeBFKtLYoTOXXd_dATqK2ftC7Mpeu1GT89L5hGjmC8Wffhx9K00OhSRiMFyihEmMKbvPC_ITQhyG1AFVZYpjWOy0SznmH0fuxUo33YpxB7mXan5sxThiCxsnfWQZq8kCtPJkiDNJ1pIuoJS6Abznb_Z6SRCiPyjzHPWfc6FzsrppxAbZdFNwQAbN0KpeDqCwLGZHoWr2XW5cNdHp2cUse4D6vU8Fg" },
+      { id: 17, title: "17", text: "Your sincere and golden heart." },
+      { id: 18, title: "18", text: "My favorite partner in crime 🤍", photo: "https://lh3.googleusercontent.com/aida-public/AB6AXuA5gLJMBS5bCJjL8NqOtAAxC4UxZ5SUaQ6i--gCJxQtnToGHc_6279Hq4MMT6SeVaGID7N-GdFVvDYjIJWrRRkKimBta8X-ijKMRTDiGq-nMjPgN9Db713S7zmchauLpb7iXBav-DDItRw6cHnfGAqamGp-hyBmLGqOggdXkfIi5NxbSG5zTDC4jabNRb53CGGLObdEe1AVsLOP9rUoBEJbu-DQkrPDDv4DXbhr2CP3yvUpGlqsTYPIrrxYqcDfZfsXRA" },
+      { id: 19, title: "19", text: "Simply being our wonderful Lady.", photo: "https://lh3.googleusercontent.com/aida-public/AB6AXuCGUkwEN6HKDF_pAVulrSsf88h1OUIx7h4dZ7D5fhxCEt1jE7ZoTvqaIE2HoYAS8AYEUGdaF4WN38eeBYmVkU8Sx61rD7r9jKFqbB76_eeAxFVJVvB5URbNHeoIK0dUsYN_zIx5IZxMymjUcppIe0XeX-mrEJ4KSeD2yZdqAqMKx9u4oGSOzkeC1_Kxh6dZcIK0pyh5Bt6kq6igtK6Wgf4B5yrpg8o2TRQo9KiZT4BA8p1OxBIxhF9moEl6q0jqPH0rGg" },
+    ];
+
+    // Master list of 14 Scrapbook Photos (New + Existing)
+    const scrapbookPhotos = [
+      // 1. Silly Filter
+      {
+        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuA8n5ZebEw5zhMeScBPjMDre9_VJhxwD7m1B14FDlJZxLdihRiIuUJXYUz-s6xnc1dwpo3dYtrJNOCKZgq9S4IuXSgX1Vz-VKuSHZ5Wwt9qwca2rABSrSVONMnnZFjhw4gjyUxeNT0f98xOa7eL3mFp3bxxN2bXQjj5AuYqGGdmHpYfjaGX-SANWTmeI9bNtT3chRTKWJ96p6OQoWWLXyll9mw6vPDUWV7aNh91PNotgDaj0u7NdXODsOouACSRWzumAA",
+        title: "Too cute to handle 🤪🌸",
+        desc: "Best laugh filter moment with hair curlers!",
+        tag: "Goofy Moment",
+        tapeColor: "bg-blush-200/80 border-dustyrose/30",
+        rotation: "rotate-2",
+        category: "couple"
+      },
+      // 2. Motorbike Helmet Ride
+      {
+        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuDaku1zQE_ebf7msajY6IuO2mtnJR92YsuaLUIdOWgBEZpsqWgjXYQt5AAuCUBXQ6Vc5RPLBsia_vxqAqt-FXQHatmY5BNfWLLI66LwInW04Yevi4X1qy4CyYPINdDSKHWcckP-POg3hssf5wBNWBhBVN_i4NgwHQQnb426QyN0gQNZrp3YuoX3XW2ay_LgrGWEw-37s3PHW8WIqLpqE-g2gp0x04vrs8IoYNC-NO28iRKqFvZtFfK3X9n0HxClGVAqAQ",
+        title: "Late night rides & cool helmets 🛵🌙",
+        desc: "Cruising under the city lights with cold breezes and warm company.",
+        tag: "Night Adventure",
+        tapeColor: "bg-[#F0E4D0]/80 border-champagne/40",
+        rotation: "-rotate-2",
+        category: "couple"
+      },
+      // 3. Sweet Couple Selfie
+      {
+        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuDcGUO3JXh5lG6KxXKoL9xdwDtIuHE4FzSBS7S9lpfIWKdP_KrXKNW-_REl_CUKYjhUNEjxgteH3GQ57QkC75Zv_pxXYQlDaaHnSGGLFjx70uIGaVyH1q6Y6Zu48H_XcyuEu6j04M-r8QU5W4_yh-fr6vVpaPk8xR9IwOoZcTFOlpo8MIESFA358QQWVMoZKTYopXosocY6uZ___F841upI1h_OBgzNy38jbbcuYfQlgCJFyqqytyjNZa234p_NZgArew",
+        title: "My favorite partner in crime 🤍",
+        desc: "Cozy leaning moments and endless giggles.",
+        tag: "Sweet Us",
+        tapeColor: "bg-champagne-light/90 border-champagne/40",
+        rotation: "rotate-3",
+        category: "couple"
+      },
+      // 4. Playful Grainy Tongue Out
+      {
+        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuC1ito0LWRrwO7oVJlMpTRJf1rzWpbza17NAiePORclaAWvhocD0cknsgSZ7xKRNUiDsW4cMG8m7sJHjCXXgu9pFAuKwitGEJ_rJWOp38nEenQ6rweK9Bnp__DJ-N4H5o8pj7_iLl-hT_FW9JvcxEpiWVdqxWjx8i3DbIo90xXnVRx4kfbzP-NzmX2tno28zBxkNuxKkBPm2QAnaOQHSL6zocfexx5Ajj0rN9Mkr8FF7Arf9aYmmcdRyGC_mujCGi_Jmw",
+        title: "Pure silliness together 😝",
+        desc: "Grainy aesthetics and matching goofy faces.",
+        tag: "Playful Vibes",
+        tapeColor: "bg-blush-300/70 border-dustyrose/30",
+        rotation: "-rotate-1",
+        category: "couple"
+      },
+      // 5. Nature Cap Selfie
+      {
+        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuAeE8DwhylBPCrUxiRijc3W7lkHYGi5hwKZS4uRRb245RpzH5KahT6tYpqiO2wKeWH0Wm1rsuF5OYuv-JlnLIB9av7IaWXCWzqQr4N464gMcMA8QZVCSbIJnvkSHTheo07wJJ-aFKLWYo0Q4AFFEvyphf9NhfRumnbQ--6J0megdAzox0dlsY4aneXK9UbvZxwiASV_eaHpSEklu1rGwr-A8qHFlmVNJJw1NxdUwPakQ7_6bumTMbs-VPlSzN2qb0A-AA",
+        title: "Nature walks & cap vibes 🧢🍃",
+        desc: "Hiking trails, fresh breeze, and sunny moods.",
+        tag: "Outdoor Walk",
+        tapeColor: "bg-[#EAD9C2]/80 border-champagne/40",
+        rotation: "rotate-1",
+        category: "lady"
+      },
+      // 6. Cute Close-up Smile
+      {
+        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCynn1X-nYZD9UpMTeRdCm222xq2Pic_us5vzH1txBbzXuZLi7BD9udrATAJAZrDFRJ7-3iBjiFS9_1RVyQhKfD82c1cqi1g_Pj3r4uJ2Y32gvXAgkRLoFwwzBtuPJw_sINmHF1UjxE9ZpzqPdeaXCJ_O4zQEMbUnoXPttkVE-8TAPsBxtHa6agXOmxnvSGAjZGRO8BeheIKL-gJF4ErgXwkPaWaZ8f5mdrIwXil-cDKUCsdgJsA9n_euzh6-8Ebzf6aQ",
+        title: "That precious smile that brightens any room ✨",
+        desc: "The softest glance and round glasses charm.",
+        tag: "Sweet Smile",
+        tapeColor: "bg-blush-200/70 border-dustyrose/20",
+        rotation: "-rotate-3",
+        category: "lady"
+      },
+      // 7. Batik Event Smile
+      {
+        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCguH2Wh-Na8Uoq7lP-vWVxcBKLu2sxLUqu1_P594BpqaQQXIPynCPcRB849ycavQcfXo49aCXwDCGHjMON7vvqUV6b6k92ITboL7oqdBSprA850oOoAlpdy0-xkCHKKx_AxDA2CCVHstCXtjyCdUY5jAurEE5sbRq8cUJkCyDrARhxe6h4nU5xfhWr0vK0UUK2NaS9QD85IHahFuZXBndR79MhiDGWoQ9a54u5KurboGB8pHMPjrLIeaWvGbQsMM6VtQ",
+        title: "So pretty in batik 🌸",
+        desc: "Looking absolutely graceful and radiant.",
+        tag: "Elegance",
+        tapeColor: "bg-champagne-light/90 border-champagne/40",
+        rotation: "rotate-2",
+        category: "lady"
+      },
+      // 8. Coastal Walk
+      {
+        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuDQCwUqmrGSO8vRJenXjjUs0I-f9BAEv0BfMWD14VaV4K8I3IGq_zNRiSa3tEdUabBgEYHEyDYj9KGLJOzXveowiS9fpYNnBtx_ysJE8i1Crzr5m_emJS_qtP1s0aPaH1h0Fiy3ApapmYK92ZU8TY9xPLdI5KC28N_n40yjvPs0UJoGcVr4QOySxMWmDil8INfic4fBMl-Cyxbp1kdPnw7wpN9nJqnNGmciNem9tIhLE9QzmFRfvA_OBFB6t0vGHSqsfA",
+        title: "Sunshine & Ocean Breeze 🌊",
+        desc: "Strolling along coastal cliffs wrapped in colorful scarves.",
+        tag: "Wanderlust",
+        tapeColor: "bg-[#F0E4D0]/80 border-champagne/40",
+        rotation: "-rotate-2",
+        category: "lady"
+      },
+      // 9. Retro Cave Beach
+      {
+        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuBTSwXxSWdgzUOYqavN_VEh6Rn9PaJ9m12E11SMWo-mr_fXxKkR5tieELifEFkCdeekwiQzYHh2Wf3LaIafzQfjrtYR8U3insSCfr6iAfqxXdncc0-p159RjozlOZ4vftgr_vGWu47lQfYo3H4TYtzxczdgvrnCZu8NbxOACXVWGS5XW4OnEbenS_BUWzX9PgiVlXfjd4cwHZk5DJLRtnVUeop66L08uNyLUPHKhB0NNWBa0tznOoQMjsSE5QLifGxcQQ",
+        title: "Golden Hour Glow ✨",
+        desc: "Vintage film camera hues inside golden rocks.",
+        tag: "Film Nostalgia",
+        tapeColor: "bg-blush-200/60 border-dustyrose/30",
+        rotation: "rotate-1",
+        category: "lady"
+      },
+      // 10. Elevator Pastel Stripes
+      {
+        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuBn3pLlV2m963GQBG7B1K3TRY5pqSwUFuJZYx0VnG1nLneLilJKbxUADH-beObV5MfmACTtxP7kDf2r5zPUdv5yO1vwNvxkxK0Bc50xyBlgY5jtuOkGHawy1tU_xUY7nFYgOxYcK1JXfNDhia4c7T7hEpz9zr1tIX2XS-dn7x8TsRUdhcYrtZU3P0Ohfc-UHT6mjASbUWj5LPQKAnE3y8x0HvwiB--xccP9xoFhuuJ9sL9P1D_Y4Fb_1pG84iij3C88nw",
+        title: "The sweetest everyday smile 🥤",
+        desc: "Cute striped shirt and pastel tumbler daily routine.",
+        tag: "Everyday Joy",
+        tapeColor: "bg-champagne-light/90 border-champagne/40",
+        rotation: "-rotate-1",
+        category: "lady"
+      },
+      // 11. Snack Time Joy
+      {
+        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuDbjIjnltav-WD_4f7BGGdhsK6FqtuJdQh0svURDXIPJDx7WcySRXAIXxtVrs11bQaKH1JiIIFBsXYIoh8c6LX44TzL-rEzlgpQZOgrsP_vC6lhujRWlp4G2FtC1hHIiSnBvTCyA5OFVu9YYyVSXIHQzYkTo-gtk87J-eVO_6peZU1ATOYb9lFNKrQ-98065yRQA6cXmZe_g5Duo6euKKzUaX4MGGGWg2j9EhwkVlMMswxrlLW_hZ8LFCyTfCdgbKnnvw",
+        title: "Snack time joy 🍯",
+        desc: "Treat in hand and a proud cute grin.",
+        tag: "Sweet Bites",
+        tapeColor: "bg-[#F0E4D0]/80 border-champagne/40",
+        rotation: "rotate-3",
+        category: "lady"
+      },
+      // 12. Pouty Cute Glam
+      {
+        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCzrEN09K8dX9YYuigXbyRsB3_OsrpowmBLITocHvWv0H1lJxGlNV8Ow4VXctq37Vgiv2BF5P3xnj1rm2FjUv0TqKseV9OcMbyMHLde_64rwJgEXSq4nVIMjHMTgzRgvDvZL7x9iCI9xeB4lNOvNNI2Jb-6HitJqxpCUodFNoO4Ru2BSF-COx8qTXz-w-aOnJFJa4NvJt4Gl96PttSkTZHwm39r-w0quZJ4TRdUOZGHTuhdVoJqor8TXV49GbbQQAVYsQ",
+        title: "Pure cute energy 🌸",
+        desc: "Playful pout and immaculate curls.",
+        tag: "Playful Mood",
+        tapeColor: "bg-blush-200/60 border-dustyrose/30",
+        rotation: "-rotate-2",
+        category: "lady"
+      },
+      // 13. Cinema Date
+      {
+        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuAQLkp9Hu9RD2BozO2RdkieY4yJUP5qLyBDszzw0swxaSp-JFsV1UW9Y_gkSR8_Uu1n9oGoT63CuE0PVIuBzIXQnSfz1yID68ehoGRaGWwkap76WSBFzz3qduNwVx3GelG9qYbOKZe3XWgVn-ou0R-oCfLtObfOJurnvRP_hG2g69tFLch9VrIPzluYO-_Gn6RQwAK90Pviyi9cwzJgtfsaxMlgC8Z7DD8a6wRsRkLH-50hq-_Mzz9F9RTlQx5e_LeGbQ",
+        title: "Movie dates & laughter 🍿",
+        desc: "Red cinema seats and whispering silly jokes before the film.",
+        tag: "Cinema Night",
+        tapeColor: "bg-champagne-light/90 border-champagne/40",
+        rotation: "rotate-2",
+        category: "lady"
+      },
+      // 14. Pink Polka Dots
+      {
+        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuAZgDujc8n7iQkz_KjSXXmdjyT1qeTUBFhq3QOa6jzdEH78b5USWGQ1vjnQXogQVobtlL4p725YaDwgjmjhUBpCEwA2OFNXudGIntXee5xvlyver8lYBoL6CYvroFz66SCWwSSi5ufM0UQ7MZ9niWxZJQFp6CDQf-DSUTe1vFYXlGtulu6oVM2FHtBINJWUSILa3YsAMVWrx9kIBg0eNdgMhSFFiz8utKwrlrvQ45S57KFuUykfuosjCgOomce__NawsQ",
+        title: "Cozy moments & endless warmth 🎀",
+        desc: "Resting comfortably on floral sheets with a calm smile.",
+        tag: "Cozy Comfort",
+        tapeColor: "bg-[#F0E4D0]/80 border-champagne/40",
+        rotation: "-rotate-1",
+        category: "lady"
+      }
+    ];
+
+    // Web Audio Synthesizer
+    function initAudio() {
+      if (!audioCtx) {
+        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      }
+      if (audioCtx.state === 'suspended') {
+        audioCtx.resume();
+      }
+    }
+
+    function playTone(freq, type = 'sine', duration = 0.5, gainLevel = 0.08) {
+      try {
+        initAudio();
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = type;
+        osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+        gain.gain.setValueAtTime(gainLevel, audioCtx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + duration);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start();
+        osc.stop(audioCtx.currentTime + duration);
+      } catch (e) {}
+    }
+
+    function playChime(type = 'chime') {
+      if (!audioCtx) return;
+      if (type === 'paper') {
+        playTone(320, 'triangle', 0.15, 0.04);
+      } else if (type === 'click') {
+        playTone(520, 'sine', 0.2, 0.05);
+      } else if (type === 'magic') {
+        [523.25, 659.25, 783.99, 1046.50].forEach((f, idx) => {
+          setTimeout(() => playTone(f, 'sine', 0.6, 0.06), idx * 80);
+        });
+      } else if (type === 'whoosh') {
+        playTone(180, 'sine', 0.4, 0.08);
+      }
+    }
+
+    // Melodic music loop generator
+    const melodyNotes = [261.63, 293.66, 329.63, 392.00, 440.00, 523.25, 392.00, 329.63];
+    let noteIdx = 0;
+    function startMusic() {
+      initAudio();
+      isMusicPlaying = true;
+      document.getElementById('musicStatusText').innerText = "Playing Melody";
+      document.getElementById('musicDiscIcon').classList.add('animate-spin');
+      
+      musicInterval = setInterval(() => {
+        if (!isMusicPlaying) return;
+        const baseFreq = melodyNotes[noteIdx % melodyNotes.length];
+        playTone(baseFreq, 'sine', 1.2, 0.035);
+        if (noteIdx % 2 === 0) {
+          playTone(baseFreq * 1.5, 'sine', 1.5, 0.02);
+        }
+        noteIdx++;
+      }, 900);
+    }
+
+    function stopMusic() {
+      isMusicPlaying = false;
+      if (musicInterval) clearInterval(musicInterval);
+      document.getElementById('musicStatusText').innerText = "Play Melody";
+      document.getElementById('musicDiscIcon').classList.remove('animate-spin');
+    }
+
+    document.getElementById('musicToggleBtn').addEventListener('click', () => {
+      if (isMusicPlaying) {
+        stopMusic();
+      } else {
+        startMusic();
+      }
+    });
+
+    /* ==========================================================
+       2. SCENE TRANSITION SYSTEM
+       ========================================================== */
+    const sceneNames = [
+      "Scene 01: The Envelope",
+      "Scene 02: The Letter",
+      "Scene 03: Birthday World",
+      "Scene 04: 19 Things",
+      "Scene 05: Memory Gallery",
+      "Scene 06: Birthday Cake",
+      "Scene 07: Make a Wish",
+      "Scene 08: The Surprise",
+      "Scene 09: Final Message"
+    ];
+
+    function goToScene(sceneNumber) {
+      const currentEl = document.getElementById(`scene${currentScene}`);
+      const nextEl = document.getElementById(`scene${sceneNumber}`);
+
+      if (!nextEl) return;
+
+      document.getElementById('sceneStepName').innerText = sceneNames[sceneNumber - 1];
+      playChime('whoosh');
+
+      currentEl.style.opacity = '0';
+      currentEl.style.pointerEvents = 'none';
+
+      setTimeout(() => {
+        currentEl.style.zIndex = '10';
+        nextEl.style.zIndex = '20';
+        nextEl.style.pointerEvents = 'auto';
+        nextEl.style.opacity = '1';
+
+        currentScene = sceneNumber;
+        onSceneEntered(sceneNumber);
+      }, 500);
+    }
+
+    function onSceneEntered(scene) {
+      if (scene === 2) {
+        // Typewriter effect for letter lines
+        const line1El = document.getElementById('letterLine1');
+        const line2El = document.getElementById('letterLine2');
+        const line1Text = '"Today is not just another day..."';
+        const line2Text = 'Because someone truly special is turning 19.';
+
+        function typewrite(el, text, delay, onDone) {
+          el.classList.remove('opacity-0');
+          el.textContent = '';
+          el.classList.add('typewriter-cursor');
+          let i = 0;
+          const interval = setInterval(() => {
+            el.textContent += text[i];
+            i++;
+            if (i >= text.length) {
+              clearInterval(interval);
+              el.classList.remove('typewriter-cursor');
+              if (onDone) onDone();
+            }
+          }, 45);
+        }
+
+        setTimeout(() => {
+          typewrite(line1El, line1Text, 0, () => {
+            setTimeout(() => {
+              typewrite(line2El, line2Text, 0, () => {
+                setTimeout(() => document.getElementById('letterLine3').classList.remove('opacity-0'), 400);
+                setTimeout(() => document.getElementById('letterAction').classList.remove('opacity-0'), 1200);
+              });
+            }, 300);
+          });
+        }, 400);
+      } else if (scene === 3) {
+        createConfettiBurst(window.innerWidth / 2, window.innerHeight / 2, 40);
+      } else if (scene === 6) {
+        setupCakeCandles();
+      } else if (scene === 8) {
+        playChime('magic');
+      } else if (scene === 9) {
+        createConfettiBurst(window.innerWidth / 2, window.innerHeight * 0.4, 60);
+      }
+    }
+
+    /* ==========================================================
+       3. SCENE 01: ENVELOPE INTERACTION
+       ========================================================== */
+    const envelopeWrapper = document.getElementById('envelopeWrapper');
+    const envelopeEl = document.getElementById('envelopeElement');
+    const openEnvelopeBtn = document.getElementById('openEnvelopeBtn');
+
+    envelopeWrapper.addEventListener('mousemove', (e) => {
+      const rect = envelopeWrapper.getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+      const tiltX = (y / (rect.height / 2)) * -12;
+      const tiltY = (x / (rect.width / 2)) * 12;
+      envelopeEl.style.transform = `rotateX(${tiltX}deg) rotateY(${tiltY}deg) scale(1.03)`;
+    });
+
+    envelopeWrapper.addEventListener('mouseleave', () => {
+      envelopeEl.style.transform = 'rotateX(0deg) rotateY(0deg) scale(1)';
+    });
+
+    function openEnvelopeSequence() {
+      playChime('paper');
+      const flap = document.getElementById('envelopeFlap');
+      const wax = document.getElementById('waxSeal');
+      const peek = document.getElementById('envelopeLetterPeek');
+
+      wax.style.transform = 'scale(1.4) rotate(20deg)';
+      wax.style.opacity = '0';
+
+      setTimeout(() => {
+        flap.style.transform = 'rotateX(180deg)';
+        flap.style.zIndex = '5';
+      }, 250);
+
+      setTimeout(() => {
+        peek.style.transform = 'translateY(-90px) scale(1.08)';
+        peek.style.zIndex = '25';
+      }, 550);
+
+      setTimeout(() => {
+        goToScene(2);
+      }, 1200);
+    }
+
+    openEnvelopeBtn.addEventListener('click', openEnvelopeSequence);
+    envelopeWrapper.addEventListener('click', openEnvelopeSequence);
+
+    /* ==========================================================
+       4. SCENE 02 & 03
+       ========================================================== */
+    document.getElementById('letterContinueBtn').addEventListener('click', () => {
+      goToScene(3);
+    });
+
+    window.addEventListener('mousemove', (e) => {
+      if (currentScene === 3) {
+        const moveX = (e.clientX - window.innerWidth / 2) * 0.02;
+        const moveY = (e.clientY - window.innerHeight / 2) * 0.02;
+        document.getElementById('worldParallaxBg').style.transform = `translate(${moveX}px, ${moveY}px)`;
+      }
+    });
+
+    document.getElementById('worldContinueBtn').addEventListener('click', () => {
+      goToScene(4);
+    });
+
+    document.getElementById('giant19Badge').addEventListener('click', () => {
+      easterEggClicks++;
+      playChime('magic');
+      if (easterEggClicks >= 3) {
+        openEasterEgg();
+        easterEggClicks = 0;
+      }
+    });
+
+    function openEasterEgg() {
+      const modal = document.getElementById('easterEggModal');
+      modal.classList.remove('hidden');
+      setTimeout(() => {
+        modal.classList.remove('opacity-0');
+        modal.querySelector('div').classList.remove('scale-95');
+        modal.querySelector('div').classList.add('scale-100');
+      }, 20);
+      createConfettiBurst(window.innerWidth / 2, window.innerHeight / 2, 70);
+    }
+
+    function closeEasterEgg() {
+      const modal = document.getElementById('easterEggModal');
+      modal.classList.add('opacity-0');
+      modal.querySelector('div').classList.add('scale-95');
+      setTimeout(() => modal.classList.add('hidden'), 300);
+    }
+
+    /* ==========================================================
+       5. SCENE 04: 19 FLIP CARDS (WITH PHOTO MINIATURE EMBEDS)
+       ========================================================== */
+    const cardsGrid = document.getElementById('cardsGrid');
+    const cardsContinueBtn = document.getElementById('cardsContinueBtn');
+    const cardsOpenedCountEl = document.getElementById('cardsOpenedCount');
+    const cardsUnlockMessage = document.getElementById('cardsUnlockMessage');
+
+    nineteenThings.forEach((item) => {
+      const card = document.createElement('div');
+      card.className = 'perspective-1000 w-full h-32 sm:h-36 cursor-pointer group';
+      
+      const photoHtml = item.photo ? `
+        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-md overflow-hidden border border-white/80 shadow-xs mb-1.5 shrink-0">
+          <img src="${item.photo}" class="w-full h-full object-cover" alt="Memory thumbnail">
+        </div>
+      ` : '';
+
+      card.innerHTML = `
+        <div class="card-inner relative w-full h-full preserve-3d transition-transform duration-500 rounded-xl shadow-sm hover:shadow-md border border-champagne/40 bg-white" id="card-${item.id}">
+          
+          <!-- Card Front -->
+          <div class="absolute inset-0 backface-hidden flex flex-col items-center justify-center p-2 text-center rounded-xl bg-gradient-to-b from-[#FFFDF9] to-[#F7EFE4]">
+            <span class="font-display font-bold text-xl sm:text-2xl text-charcoal group-hover:scale-110 transition-transform">${item.title}</span>
+            <span class="text-[9px] uppercase tracking-widest text-dustyrose font-sans mt-1">Tap to read</span>
+            <div class="card-dot hidden absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-champagne-gold shadow"></div>
+            ${item.photo ? '<span class="absolute bottom-1 right-1 text-[9px] opacity-70">📷</span>' : ''}
+          </div>
+
+          <!-- Card Back -->
+          <div class="absolute inset-0 backface-hidden rotate-y-180 flex flex-col items-center justify-center p-2.5 text-center rounded-xl bg-gradient-to-tr from-dustyrose via-blush-400 to-champagne-light text-white overflow-hidden">
+            ${photoHtml}
+            <span class="font-serif italic text-xs leading-tight drop-shadow-xs line-clamp-3">${item.text}</span>
+            <span class="text-[8px] uppercase tracking-wider text-ivory-100/80 mt-1 font-sans">#${item.title}</span>
+          </div>
+
+        </div>
+      `;
+
+      card.addEventListener('click', () => {
+        const inner = card.querySelector('.card-inner');
+        const isFlipped = inner.classList.contains('rotate-y-180');
+        
+        playChime('click');
+
+        if (!isFlipped) {
+          inner.classList.add('rotate-y-180');
+          card.querySelector('.card-dot').classList.remove('hidden');
+          openedCards.add(item.id);
+        } else {
+          inner.classList.remove('rotate-y-180');
+        }
+
+        cardsOpenedCountEl.innerText = openedCards.size;
+
+        if (openedCards.size >= 5) {
+          cardsContinueBtn.disabled = false;
+          cardsContinueBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+          cardsContinueBtn.classList.add('bg-dustyrose', 'hover:scale-105');
+          cardsContinueBtn.innerText = "Continue the Story →";
+        }
+
+        if (openedCards.size === 19) {
+          cardsUnlockMessage.classList.remove('hidden');
+        }
+      });
+
+      cardsGrid.appendChild(card);
+    });
+
+    cardsContinueBtn.addEventListener('click', () => {
+      goToScene(5);
+    });
+
+    /* ==========================================================
+       6. SCENE 05: SCRAPBOOK POLAROID GALLERY GENERATOR
+       ========================================================== */
+    const scrapbookContainer = document.getElementById('scrapbookContainer');
+
+    scrapbookPhotos.forEach((photo, idx) => {
+      const card = document.createElement('div');
+      const isCouple = photo.category === 'couple';
+      card.className = `polaroid-card group bg-white p-3 pb-5 rounded-xl shadow-md hover:shadow-2xl border border-[#EDE4D5] transform ${photo.rotation} hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer relative`;
+      card.setAttribute('onclick', `openPhotoModal(${idx})`);
+
+      card.innerHTML = `
+        <!-- Washi Tape sticker on top -->
+        <div class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-14 h-4 ${photo.tapeColor} border-x rounded-xs shadow-xs z-10"></div>
+        
+        <!-- Category Stamp Badge -->
+        <div class="absolute top-2 right-2 z-10">
+          <span class="text-[8px] uppercase tracking-wider px-1.5 py-0.5 rounded ${isCouple ? 'bg-champagne-gold/90 text-white' : 'bg-blush-400/90 text-white'} backdrop-blur-xs font-sans">
+            ${isCouple ? 'Couple 🤍' : 'Lady ✨'}
+          </span>
+        </div>
+
+        <div class="w-full aspect-[4/3] rounded overflow-hidden relative shadow-inner bg-blush-50">
+          <img src="${photo.src}" alt="${photo.title}" class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500">
+          <span class="absolute bottom-1.5 left-1.5 bg-black/60 backdrop-blur-sm text-[8px] font-sans px-1.5 py-0.5 rounded text-white tracking-widest uppercase">
+            ${photo.tag}
+          </span>
+        </div>
+        <div class="mt-3 text-center px-1">
+          <p class="font-script text-lg sm:text-xl text-charcoal leading-snug line-clamp-1">"${photo.title}"</p>
+          <span class="text-[9px] font-sans text-softbrown/70 uppercase tracking-widest block mt-0.5">Moment #${idx + 1}</span>
+        </div>
+      `;
+
+      scrapbookContainer.appendChild(card);
+    });
+
+    function openPhotoModal(index) {
+      playChime('click');
+      const item = scrapbookPhotos[index];
+      document.getElementById('modalActiveImg').src = item.src;
+      document.getElementById('photoModalTitle').innerText = item.title;
+      document.getElementById('photoModalDesc').innerText = item.desc;
+      document.getElementById('photoModalTag').innerText = item.tag;
+
+      const modal = document.getElementById('photoModal');
+      modal.classList.remove('hidden');
+      setTimeout(() => modal.classList.remove('opacity-0'), 20);
+    }
+
+    function closePhotoModal() {
+      const modal = document.getElementById('photoModal');
+      modal.classList.add('opacity-0');
+      setTimeout(() => modal.classList.add('hidden'), 300);
+    }
+
+    document.getElementById('galleryContinueBtn').addEventListener('click', () => {
+      goToScene(6);
+    });
+
+    /* ==========================================================
+       7. SCENE 06 & 07: CAKE & 19 CANDLES WITH MICROPHONE BLOW
+       ========================================================== */
+    let candlesBlown = false;
+
+    function setupCakeCandles() {
+      const container = document.getElementById('candlesRow');
+      container.innerHTML = '';
+      for (let i = 0; i < 19; i++) {
+        const candle = document.createElement('div');
+        candle.className = 'flex flex-col items-center';
+        candle.innerHTML = `
+          <div class="candle-flame w-2 h-3.5 bg-gradient-to-t from-amber-400 via-yellow-200 to-white rounded-full blur-[0.5px] flame-anim shadow-[0_0_8px_rgba(255,200,80,0.8)]"></div>
+          <div class="w-1.5 h-6 bg-gradient-to-b from-[#F5D8B8] to-[#E2BE97] rounded-sm border-t border-champagne"></div>
+        `;
+        container.appendChild(candle);
+      }
+    }
+
+    document.getElementById('cakeWishBtn').addEventListener('click', () => {
+      goToScene(7);
+      setupMicListener();
+    });
+
+    let audioStream = null;
+    let micListenerActive = false;
+
+    function setupMicListener() {
+      if (micListenerActive) return;
+      if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+        navigator.mediaDevices.getUserMedia({ audio: true }).then((stream) => {
+          audioStream = stream;
+          micListenerActive = true;
+          const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+          const analyser = audioContext.createAnalyser();
+          const microphone = audioContext.createMediaStreamSource(stream);
+          microphone.connect(analyser);
+          analyser.fftSize = 256;
+          const bufferLength = analyser.frequencyBinCount;
+          const dataArray = new Uint8Array(bufferLength);
+
+          function checkBlowing() {
+            if (candlesBlown || currentScene !== 7) return;
+            analyser.getByteFrequencyData(dataArray);
+            let sum = 0;
+            for (let i = 0; i < bufferLength; i++) {
+              sum += dataArray[i];
+            }
+            const average = sum / bufferLength;
+            if (average > 65) {
+              extinguishCandles();
+            } else {
+              requestAnimationFrame(checkBlowing);
+            }
+          }
+          checkBlowing();
+        }).catch(() => {
+          document.getElementById('micHintText').innerText = "Click the button below to blow out your candles.";
+        });
+      }
+    }
+
+    function extinguishCandles() {
+      if (candlesBlown) return;
+      candlesBlown = true;
+      playChime('whoosh');
+
+      document.querySelectorAll('.candle-flame').forEach((flame, index) => {
+        setTimeout(() => {
+          flame.style.transition = 'all 0.3s';
+          flame.style.transform = 'scale(0)';
+          flame.style.opacity = '0';
+        }, index * 40);
+      });
+
+      const title = document.getElementById('wishPromptTitle');
+      const sub = document.getElementById('wishPromptSub');
+      title.innerText = "Wish Made 🤍";
+      sub.innerText = "The universe heard you.";
+
+      setTimeout(() => {
+        goToScene(8);
+      }, 1600);
+    }
+
+    document.getElementById('blowCandlesBtn').addEventListener('click', extinguishCandles);
+
+    /* ==========================================================
+       8. SCENE 08: SURPRISE BURST
+       ========================================================== */
+    document.getElementById('openSurpriseBtn').addEventListener('click', () => {
+      playChime('magic');
+      createConfettiBurst(window.innerWidth / 2, window.innerHeight / 2, 80);
+      setTimeout(() => {
+        goToScene(9);
+      }, 700);
+    });
+
+    /* ==========================================================
+       LOVE COUPONS
+       ========================================================== */
+    const loveCoupons = [
+      { emoji: '🤗', title: 'Unlimited Hugs Voucher', desc: 'Redeemable anytime, anywhere. No expiration date — ever!', color: 'from-dustyrose/90 to-blush-400/80', claimText: 'Claim Hug!' },
+      { emoji: '🍽️', title: 'Date & Dinner Voucher', desc: 'Pick any restaurant you love. Everything is on me, no questions asked!', color: 'from-champagne-gold/80 to-champagne/90', claimText: 'Claim Date!' },
+      { emoji: '🥺', title: 'Instant Forgiveness Voucher', desc: 'Feeling upset? Just use this. Immediate peace, zero drama, I promise!', color: 'from-blush-300/80 to-blush-200/90', claimText: 'Claim Peace!' },
+      { emoji: '🧋', title: 'Coffee / Ice Cream Voucher', desc: 'Your favorite drink or sweet treat — fully covered by me, whenever you want!', color: 'from-softbrown/70 to-champagne-dark/60', claimText: 'Claim Treat!' },
+    ];
+    const claimedCoupons = new Set();
+
+    function renderLoveCoupons() {
+      const grid = document.getElementById('loveCouponsGrid');
+      grid.innerHTML = '';
+      loveCoupons.forEach((c, idx) => {
+        const isClaimed = claimedCoupons.has(idx);
+        const div = document.createElement('div');
+        div.className = `coupon-card coupon-tear relative bg-gradient-to-br ${c.color} rounded-2xl p-5 shadow-xl text-white text-left border border-white/30 ${isClaimed ? 'coupon-claimed' : 'cursor-pointer hover:scale-[1.03] transition-transform'}`;
+        div.style.animationDelay = (idx * 0.08) + 's';
+        div.innerHTML = `
+          <div class="flex items-start gap-3">
+            <span class="text-3xl">${c.emoji}</span>
+            <div class="flex-1">
+              <p class="font-display font-semibold text-sm leading-tight mb-1">${c.title}</p>
+              <p class="font-serif italic text-xs opacity-90 leading-relaxed">${c.desc}</p>
+            </div>
+          </div>
+          <div class="mt-3 flex items-center justify-between">
+            <span class="text-[9px] uppercase tracking-widest opacity-70 font-sans">Lady Juwita — 19th Birthday</span>
+            <button class="text-[10px] px-3 py-1 rounded-full ${isClaimed ? 'bg-white/20' : 'bg-white/30 hover:bg-white/50'} font-sans uppercase tracking-wide transition-all coupon-claim-btn" data-idx="${idx}">
+              ${isClaimed ? '✓ Claimed!' : c.claimText}
+            </button>
+          </div>
+        `;
+        grid.appendChild(div);
+      });
+
+      grid.querySelectorAll('.coupon-claim-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const idx = parseInt(btn.dataset.idx);
+          if (claimedCoupons.has(idx)) return;
+          claimedCoupons.add(idx);
+          playChime('magic');
+          createConfettiBurst(
+            e.clientX || window.innerWidth / 2,
+            e.clientY || window.innerHeight / 2,
+            50
+          );
+          // burst hearts
+          for (let i = 0; i < 12; i++) {
+            spawnLoveParticle(e.clientX || window.innerWidth/2, e.clientY || window.innerHeight/2);
+          }
+          renderLoveCoupons();
+        });
+      });
+    }
+
+    function openLoveCoupons() {
+      renderLoveCoupons();
+      const modal = document.getElementById('loveCouponsModal');
+      modal.classList.remove('hidden');
+      setTimeout(() => modal.classList.remove('opacity-0'), 20);
+    }
+
+    function closeLoveCoupons() {
+      const modal = document.getElementById('loveCouponsModal');
+      modal.classList.add('opacity-0');
+      setTimeout(() => modal.classList.add('hidden'), 300);
+    }
+
+    document.getElementById('openLoveCouponsBtn').addEventListener('click', openLoveCoupons);
+    document.getElementById('openLoveCouponsBtn9').addEventListener('click', openLoveCoupons);
+    document.getElementById('closeLoveCouponsBtn').addEventListener('click', closeLoveCoupons);
+    document.getElementById('loveCouponsModal').addEventListener('click', (e) => {
+      if (e.target === document.getElementById('loveCouponsModal')) closeLoveCoupons();
+    });
+
+    /* ==========================================================
+       9. SCENE 09: REPLAY
+       ========================================================== */
+    document.getElementById('replayBtn').addEventListener('click', () => {
+      candlesBlown = false;
+      goToScene(1);
+    });
+
+    /* ==========================================================
+       LOVE JAR
+       ========================================================== */
+    const loveJarNotes = [
+      '"You are the reason I smile, even on the hardest of days." 🌸',
+      '"May this 19th year bring you the happiest, most beautiful version of yourself." ✨',
+      '"Thank you for simply existing. You are worth so much more than you know." 🤍',
+      '"In every journey we share, you are always the best part of it." 🛵',
+      '"Nineteen years of you — and the world has been so much more beautiful because of it." 💫',
+      '"May every dream you carry this year come true, one by one." 🌙',
+      '"I am grateful every single day that I get to know you, Lady." 🎀',
+      '"You deserve every bit of goodness that comes your way today and always." 💛',
+      '"Your smile is the thing I look forward to most, every single day." 🌷',
+      '"Happy 19th, Lady. Keep being wonderfully, beautifully you." 🎂',
+    ];
+    let loveJarUsed = [];
+    let loveJarShaking = false;
+
+    document.getElementById('loveJarBtn').addEventListener('click', () => {
+      if (loveJarShaking) return;
+      loveJarShaking = true;
+      const jarEl = document.getElementById('loveJarEmoji');
+      jarEl.closest('[id="loveJarBtn"]').classList.add('jar-shake');
+      setTimeout(() => {
+        jarEl.closest('[id="loveJarBtn"]').classList.remove('jar-shake');
+        loveJarShaking = false;
+      }, 500);
+
+      if (loveJarUsed.length >= loveJarNotes.length) loveJarUsed = [];
+      const remaining = loveJarNotes.filter((_, i) => !loveJarUsed.includes(i));
+      const randomIdx = loveJarNotes.indexOf(remaining[Math.floor(Math.random() * remaining.length)]);
+      loveJarUsed.push(randomIdx);
+
+      const noteArea = document.getElementById('loveJarNoteArea');
+      const noteEl   = document.getElementById('loveJarNote');
+      const noteText = document.getElementById('loveJarNoteText');
+
+      noteArea.classList.remove('hidden');
+      noteArea.classList.add('flex');
+      noteEl.classList.remove('note-unfold');
+      void noteEl.offsetWidth; // reflow to restart animation
+      noteEl.classList.add('note-unfold');
+      noteText.textContent = loveJarNotes[randomIdx];
+      playChime('magic');
+
+      for (let i = 0; i < 8; i++) {
+        const r = document.getElementById('loveJarBtn').getBoundingClientRect();
+        spawnLoveParticle(r.left + r.width / 2 + (Math.random()-0.5)*40,
+                          r.top  + r.height / 2);
+      }
+    });
+
+    document.getElementById('loveJarNextBtn').addEventListener('click', () => {
+      document.getElementById('loveJarBtn').click();
+    });
+
+    /* ==========================================================
+       10. AMBIENT PARTICLES (PETALS, SPARKLES, DUST)
+       ========================================================== */
+    const canvas = document.getElementById('ambientCanvas');
+    const ctx = canvas.getContext('2d');
+    let width = canvas.width = window.innerWidth;
+    let height = canvas.height = window.innerHeight;
+
+    window.addEventListener('resize', () => {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+    });
+
+    const particles = [];
+    const maxParticles = window.innerWidth < 768 ? 25 : 55;
+
+    class Particle {
+      constructor() {
+        this.reset();
+      }
+      reset() {
+        this.x = Math.random() * width;
+        this.y = Math.random() * -height * 0.2;
+        this.size = Math.random() * 5 + 3;
+        this.speedX = (Math.random() - 0.5) * 0.8;
+        this.speedY = Math.random() * 0.8 + 0.4;
+        this.rotation = Math.random() * 360;
+        this.rotationSpeed = (Math.random() - 0.5) * 1.5;
+        this.opacity = Math.random() * 0.6 + 0.2;
+        this.isPetal = Math.random() > 0.4;
+      }
+      update() {
+        this.x += this.speedX;
+        this.y += this.speedY;
+        this.rotation += this.rotationSpeed;
+        if (this.y > height + 20) {
+          this.reset();
+        }
+      }
+      draw() {
+        ctx.save();
+        ctx.translate(this.x, this.y);
+        ctx.rotate((this.rotation * Math.PI) / 180);
+        ctx.globalAlpha = this.opacity;
+
+        if (this.isPetal) {
+          ctx.fillStyle = '#E8A5A6';
+          ctx.beginPath();
+          ctx.ellipse(0, 0, this.size, this.size * 1.6, 0, 0, Math.PI * 2);
+          ctx.fill();
+        } else {
+          ctx.fillStyle = '#D8B888';
+          ctx.beginPath();
+          ctx.arc(0, 0, this.size * 0.4, 0, Math.PI * 2);
+          ctx.fill();
+        }
+        ctx.restore();
+      }
+    }
+
+    for (let i = 0; i < maxParticles; i++) {
+      const p = new Particle();
+      p.y = Math.random() * height;
+      particles.push(p);
+    }
+
+    function createConfettiBurst(originX, originY, count = 30) {
+      for (let i = 0; i < count; i++) {
+        const p = new Particle();
+        p.x = originX;
+        p.y = originY;
+        p.speedX = (Math.random() - 0.5) * 10;
+        p.speedY = (Math.random() - 0.7) * 9;
+        particles.push(p);
+      }
+    }
+
+    function animateParticles() {
+      ctx.clearRect(0, 0, width, height);
+      for (let i = 0; i < particles.length; i++) {
+        particles[i].update();
+        particles[i].draw();
+      }
+      if (particles.length > maxParticles) {
+        particles.shift();
+      }
+      requestAnimationFrame(animateParticles);
+    }
+    animateParticles();
+
+    /* ==========================================================
+       11. CUSTOM CURSOR & SPARKLE TRAIL
+       ========================================================== */
+    const cursorDot = document.getElementById('cursorDot');
+    let lastSpawn = 0;
+
+    window.addEventListener('mousemove', (e) => {
+      cursorDot.style.left = `${e.clientX}px`;
+      cursorDot.style.top = `${e.clientY}px`;
+
+      const now = Date.now();
+      if (now - lastSpawn > 80 && window.innerWidth >= 768) {
+        lastSpawn = now;
+        const trail = new Particle();
+        trail.x = e.clientX;
+        trail.y = e.clientY;
+        trail.size = Math.random() * 3 + 2;
+        trail.speedX = (Math.random() - 0.5) * 0.4;
+        trail.speedY = Math.random() * 0.5 + 0.2;
+        trail.opacity = 0.7;
+        trail.isPetal = false;
+        particles.push(trail);
+      }
+    });
+
+    /* ==========================================================
+       12. INTERACTIVE LOVE PARTICLES (click / touch anywhere)
+       ========================================================== */
+    const loveSymbols = ['❤️','🤍','💕','💗','💖','🌸','✨','💫','🎀','💝'];
+
+    function spawnLoveParticle(x, y) {
+      const el = document.createElement('span');
+      el.className = 'love-particle';
+      el.textContent = loveSymbols[Math.floor(Math.random() * loveSymbols.length)];
+      el.style.left = x + 'px';
+      el.style.top  = y + 'px';
+      const dx = (Math.random() - 0.5) * 120;
+      const dy = -(Math.random() * 100 + 60);
+      el.style.setProperty('--dx', dx + 'px');
+      el.style.setProperty('--dy', dy + 'px');
+      el.style.fontSize = (Math.random() * 12 + 12) + 'px';
+      document.body.appendChild(el);
+      setTimeout(() => el.remove(), 1500);
+    }
+
+    let lastLoveSpawn = 0;
+    const LOVE_THROTTLE = 120; // ms between spawns
+
+    window.addEventListener('click', (e) => {
+      // Don't spawn if clicking a button or interactive element
+      if (e.target.closest('button, a, input, select, textarea, [role=button]')) return;
+      const now = Date.now();
+      if (now - lastLoveSpawn < LOVE_THROTTLE) return;
+      lastLoveSpawn = now;
+      const count = Math.floor(Math.random() * 3) + 2;
+      for (let i = 0; i < count; i++) {
+        setTimeout(() => spawnLoveParticle(e.clientX, e.clientY), i * 60);
+      }
+    });
+
+    // Touch support
+    window.addEventListener('touchstart', (e) => {
+      const now = Date.now();
+      if (now - lastLoveSpawn < LOVE_THROTTLE) return;
+      lastLoveSpawn = now;
+      Array.from(e.touches).forEach(touch => {
+        if (touch.target.closest('button, a, input')) return;
+        const count = Math.floor(Math.random() * 3) + 2;
+        for (let i = 0; i < count; i++) {
+          setTimeout(() => spawnLoveParticle(touch.clientX, touch.clientY), i * 60);
+        }
+      });
+    }, { passive: true });
+
+  </script>
+
+
+
+
+</body></html>
